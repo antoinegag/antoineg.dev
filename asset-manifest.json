@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "antoinegag.github.io/antoineg.dev/static/css/main.d1b05096.chunk.css",
-    "main.js": "antoinegag.github.io/antoineg.dev/static/js/main.ae33c6e8.chunk.js",
-    "main.js.map": "antoinegag.github.io/antoineg.dev/static/js/main.ae33c6e8.chunk.js.map",
-    "runtime-main.js": "antoinegag.github.io/antoineg.dev/static/js/runtime-main.215a9cb5.js",
-    "runtime-main.js.map": "antoinegag.github.io/antoineg.dev/static/js/runtime-main.215a9cb5.js.map",
-    "static/js/2.570f2565.chunk.js": "antoinegag.github.io/antoineg.dev/static/js/2.570f2565.chunk.js",
-    "static/js/2.570f2565.chunk.js.map": "antoinegag.github.io/antoineg.dev/static/js/2.570f2565.chunk.js.map",
-    "index.html": "antoinegag.github.io/antoineg.dev/index.html",
-    "precache-manifest.bb9bd886199754949bd566eb7b2eeffc.js": "antoinegag.github.io/antoineg.dev/precache-manifest.bb9bd886199754949bd566eb7b2eeffc.js",
-    "service-worker.js": "antoinegag.github.io/antoineg.dev/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "antoinegag.github.io/antoineg.dev/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.570f2565.chunk.js.LICENSE": "antoinegag.github.io/antoineg.dev/static/js/2.570f2565.chunk.js.LICENSE",
-    "static/media/logo.svg": "antoinegag.github.io/antoineg.dev/static/media/logo.5d5d9eef.svg"
+    "main.css": "/antoineg.dev/static/css/main.d1b05096.chunk.css",
+    "main.js": "/antoineg.dev/static/js/main.95f020d9.chunk.js",
+    "main.js.map": "/antoineg.dev/static/js/main.95f020d9.chunk.js.map",
+    "runtime-main.js": "/antoineg.dev/static/js/runtime-main.42229a7e.js",
+    "runtime-main.js.map": "/antoineg.dev/static/js/runtime-main.42229a7e.js.map",
+    "static/js/2.570f2565.chunk.js": "/antoineg.dev/static/js/2.570f2565.chunk.js",
+    "static/js/2.570f2565.chunk.js.map": "/antoineg.dev/static/js/2.570f2565.chunk.js.map",
+    "index.html": "/antoineg.dev/index.html",
+    "precache-manifest.42be6c843e18a09b57056b8a5915a738.js": "/antoineg.dev/precache-manifest.42be6c843e18a09b57056b8a5915a738.js",
+    "service-worker.js": "/antoineg.dev/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/antoineg.dev/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.570f2565.chunk.js.LICENSE": "/antoineg.dev/static/js/2.570f2565.chunk.js.LICENSE",
+    "static/media/logo.svg": "/antoineg.dev/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.215a9cb5.js",
+    "static/js/runtime-main.42229a7e.js",
     "static/js/2.570f2565.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.ae33c6e8.chunk.js"
+    "static/js/main.95f020d9.chunk.js"
   ]
 }
