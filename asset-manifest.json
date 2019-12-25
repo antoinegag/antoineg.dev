@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "antoineg.dev/static/css/main.d1b05096.chunk.css",
+    "main.js": "antoineg.dev/static/js/main.698bed1f.chunk.js",
+    "main.js.map": "antoineg.dev/static/js/main.698bed1f.chunk.js.map",
+    "runtime-main.js": "antoineg.dev/static/js/runtime-main.8ec8d3cb.js",
+    "runtime-main.js.map": "antoineg.dev/static/js/runtime-main.8ec8d3cb.js.map",
+    "static/js/2.570f2565.chunk.js": "antoineg.dev/static/js/2.570f2565.chunk.js",
+    "static/js/2.570f2565.chunk.js.map": "antoineg.dev/static/js/2.570f2565.chunk.js.map",
+    "index.html": "antoineg.dev/index.html",
+    "precache-manifest.dfdd1936e868c46b6392f53ea903104b.js": "antoineg.dev/precache-manifest.dfdd1936e868c46b6392f53ea903104b.js",
+    "service-worker.js": "antoineg.dev/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "antoineg.dev/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.570f2565.chunk.js.LICENSE": "antoineg.dev/static/js/2.570f2565.chunk.js.LICENSE",
+    "static/media/logo.svg": "antoineg.dev/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ec8d3cb.js",
+    "static/js/2.570f2565.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.698bed1f.chunk.js"
+  ]
+}
