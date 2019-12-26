@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import unified from "unified";
 import parse from "remark-parse";
 import remark2react from "remark-react";
+import images from "remark-images";
+import rehype from "rehype-dom-parse";
 
 export default function useMarkdownPost(src) {
   const [markdown, setMarkdown] = useState([]);
@@ -33,7 +35,23 @@ export default function useMarkdownPost(src) {
 
   const rendered = unified()
     .use(parse)
-    .use(remark2react)
+    .use(remark2react, {
+      sanitize: false,
+      toHast: {
+        handlers: {
+          html: (h, node) => {
+            // process raw HTML text into HAST so react remark can process it
+            const child = unified()
+              .use(rehype, { fragment: true })
+              .parse(node.value).children;
+            return child;
+          }
+        }
+      },
+      remarkReactComponents: {
+        // img: props => <div>{JSON.stringify(props.scr)} - {props.src}</div>
+      }
+    })
     .processSync(markdown).contents;
 
   return { loading, rendered };
