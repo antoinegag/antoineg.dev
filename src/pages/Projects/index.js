@@ -3,12 +3,14 @@ import PostList from "../../components/PostList";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 import Project from "./Project";
 
+import { Container } from "reactstrap";
+
 export default function Projects() {
   const match = useRouteMatch();
 
   return (
-    <div>
-      <h1>Projects</h1>
+    <Container fluid className="p-4">
+      <h1>My Projects</h1>
       <Switch>
         <Route path={`${match.path}/:project`}>
           <Project />
@@ -17,6 +19,6 @@ export default function Projects() {
           <PostList />
         </Route>
       </Switch>
-    </div>
+    </Container>
   );
 }
