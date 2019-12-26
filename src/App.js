@@ -1,6 +1,5 @@
 import React from "react";
 
-import PostList from "./components/PostList";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
@@ -20,8 +19,6 @@ function App() {
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/projects">
             <Projects />

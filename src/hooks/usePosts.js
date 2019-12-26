@@ -9,10 +9,11 @@ export default function usePosts(type = "projects") {
       let res;
 
       try {
-        res = await fetch(`posts/${type}.json`);
+        res = await fetch(`/posts/${type}.json`);
       } catch (error) {
         setLoading(false);
-        return;
+        console.error(`Error loading posts for type ${type}`);
+        return { loading };
       }
       if (res.ok) {
         setPosts(await res.json());
@@ -20,7 +21,7 @@ export default function usePosts(type = "projects") {
       setLoading(false);
     };
     fetchPosts();
-  }, [type]);
+  }, [type, loading]);
 
   return { loading, posts };
 }

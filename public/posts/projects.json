@@ -1,18 +1,8 @@
-[
-  {
-    "title": "Why React is better than Vue",
-    "description": "This is a test post",
-    "img": "/assets/neksan.png",
-    "src": "1.md"
-  },
-  {
-    "title": "Why Linux is better than Windows",
-    "description": "an other post",
-    "src": "2.md"
-  },
-  {
-    "title": "Why I have no friends",
-    "description": "last post",
-    "src": "3.md"
+{
+  "sara": {
+    "title": "S.a.r.a - Smart Assistant and Room Automation",
+    "description": "my home automation system",
+    "src": "sara.md",
+    "link": "https://github.com/antoinegag/sara"
   }
-]
+}

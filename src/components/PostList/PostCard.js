@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function PostCard(props) {
-  const { title, description, img } = props;
+  const { slug, title, description, img } = props;
   return (
     <div>
-      <h1>{title}</h1>
+      <Link to={slug}>{title}</Link>
       <p>{description}</p>
       {img && <img src={img} alt={`${title} preview`} />}
     </div>
@@ -13,6 +14,7 @@ function PostCard(props) {
 }
 
 PostCard.propTypes = {
+  slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   img: PropTypes.string,

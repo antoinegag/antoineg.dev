@@ -12,25 +12,29 @@ export default function useMarkdownPost(src) {
       let res;
 
       try {
-        res = await fetch(`posts/${src}`);
+        res = await fetch(`/posts/${src}`);
       } catch (error) {
+        console.error(`Error loading post ${src}}`);
         setLoading(false);
-        return;
+        return { loading };
       }
       if (res.ok) {
-        setMarkdown(await res.text());
+        const md = await res.text();
+        setMarkdown(md);
       }
+
       setLoading(false);
     };
+
     fetchPosts();
-  }, [src]);
+  }, [src, loading]);
 
   if (loading) return { loading };
 
-  const post = unified()
+  const rendered = unified()
     .use(parse)
     .use(remark2react)
     .processSync(markdown).contents;
 
-  return { loading, post };
+  return { loading, rendered };
 }
