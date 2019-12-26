@@ -29,10 +29,7 @@ function PostCard(props) {
         </CardBody>
         {img && <img src={img} alt={`${title} preview`} />}
         <CardBody>
-          <CardText>
-            <p>{description}</p>
-            {tech && <p>Technologies: {tech.join(", ")}</p>}
-          </CardText>
+          <CardText>{tech && <p>Technologies: {tech.join(", ")}</p>}</CardText>
           {link && <CardLink href={link}>Project Link</CardLink>}
           {github && (
             <CardLink className="link-unstyled" href={github}>
