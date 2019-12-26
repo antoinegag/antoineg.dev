@@ -10,12 +10,12 @@ export default function Projects() {
 
   return (
     <Container fluid className="p-4">
-      <h1>My Projects</h1>
       <Switch>
         <Route path={`${match.path}/:project`}>
           <Project />
         </Route>
         <Route path={match.path}>
+          <h1>My Projects</h1>
           <PostList />
         </Route>
       </Switch>

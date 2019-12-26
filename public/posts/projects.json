@@ -41,5 +41,14 @@
     "github": "https://github.com/antoinegag/curseforge-analytics-viewer",
     "img": "./assets/curseforge.png",
     "tech": ["React", "plotly.js", "Bootstrap"]
+  },
+  "antoineg.dev": {
+    "title": "🏠 My Personal Website",
+    "description": "Renders Markdown to HTML to easily create project entries",
+    "src": "antoineg.dev.md",
+    "github": "https://github.com/antoinegag/antoineg.dev",
+    "img": "./assets/markdown.png",
+    "tech": ["React", "Bootstrap", "Remark"],
+    "indev": true
   }
 }

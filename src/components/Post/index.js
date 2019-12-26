@@ -1,5 +1,6 @@
 import React from "react";
 import useMarkdownPost from "../../hooks/useMarkdownPost";
+import { Container } from "reactstrap";
 
 function Post(props) {
   const { title, src } = props;
@@ -10,10 +11,10 @@ function Post(props) {
   if (!rendered) return <div>Error loading post</div>;
 
   return (
-    <div>
+    <Container>
       <h1>{title}</h1>
       {rendered}
-    </div>
+    </Container>
   );
 }
 
