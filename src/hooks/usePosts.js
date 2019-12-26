@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function usePosts() {
+export default function usePosts(type = "projects") {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -9,7 +9,7 @@ export default function usePosts() {
       let res;
 
       try {
-        res = await fetch("posts/index.json");
+        res = await fetch(`posts/${type}.json`);
       } catch (error) {
         setLoading(false);
         return;
@@ -20,7 +20,7 @@ export default function usePosts() {
       setLoading(false);
     };
     fetchPosts();
-  }, []);
+  }, [type]);
 
   return { loading, posts };
 }
