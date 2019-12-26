@@ -2,7 +2,7 @@
   "econav": {
     "title": "♻️ EcoNav",
     "description": "Analyze driving habits to improve your fuel efficiency",
-    "src": "sara.md",
+    "src": "econav.md",
     "github": "https://github.com/antoinegag/econav",
     "img": "./assets/econav.jpg"
   },
@@ -16,7 +16,7 @@
   "climactic": {
     "title": "📈 Climactic",
     "description": "Over the air environmental data collection and statistics.",
-    "src": "sara.md",
+    "src": "climactic.md",
     "github": "https://github.com/antoinegag/climactic",
     "img": "./assets/climactic.png"
   }
