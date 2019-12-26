@@ -22,6 +22,7 @@ export default function Home() {
               everything.
             </p>
             <hr className="my-2" />
+            <h3>About me</h3>
             <p>
               Currently studying Computer Science at University of Sherbrooke
               and continuously working on my hobby projects, trying to make the
