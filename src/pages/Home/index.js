@@ -24,9 +24,9 @@ export default function Home() {
             <hr className="my-2" />
             <h3>About me</h3>
             <p>
-              Currently studying Computer Science at University of Sherbrooke
-              and continuously working on my hobby projects, trying to make the
-              world a better place&trade;
+              I'm currently studying Computer Science at University of
+              Sherbrooke and continuously working on my hobby projects, trying
+              to make the world a better place&trade;
             </p>
             <h3>Skills</h3>
             <p>
