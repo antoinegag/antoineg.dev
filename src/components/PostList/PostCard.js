@@ -19,17 +19,24 @@ function PostCard(props) {
         <CardBody>
           <CardTitle tag="h3">
             <Link to={`${slug}`}>{title}</Link>
-            {indev && (
-              <Badge className="ml-2" color="info">
-                In Development
-              </Badge>
-            )}
           </CardTitle>
+
+          <CardText>
+            {indev && <Badge color="warning">In Development</Badge>}
+          </CardText>
           <CardSubtitle>{description}</CardSubtitle>
+          {tech && (
+            <CardText>
+              {tech.map(entry => (
+                <Badge className="mr-1" color="info">
+                  {entry}
+                </Badge>
+              ))}
+            </CardText>
+          )}
         </CardBody>
         {img && <img src={img} alt={`${title} preview`} />}
         <CardBody>
-          <CardText>{tech && <p>Technologies: {tech.join(", ")}</p>}</CardText>
           {link && <CardLink href={link}>Project Link</CardLink>}
           {github && (
             <CardLink className="link-unstyled" href={github}>
