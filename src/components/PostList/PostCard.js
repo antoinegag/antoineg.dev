@@ -3,28 +3,36 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {
   Card,
-  CardImg,
   CardText,
   CardBody,
   CardLink,
   CardTitle,
-  CardSubtitle
+  CardSubtitle,
+  Badge
 } from "reactstrap";
 
 function PostCard(props) {
-  const { slug, title, description, img, link, github } = props;
+  const { slug, title, description, img, link, github, tech, indev } = props;
   return (
     <div>
       <Card>
         <CardBody>
           <CardTitle tag="h3">
             <Link to={`${slug}`}>{title}</Link>
+            {indev && (
+              <Badge className="ml-2" color="info">
+                In Development
+              </Badge>
+            )}
           </CardTitle>
           <CardSubtitle>{description}</CardSubtitle>
         </CardBody>
         {img && <img src={img} alt={`${title} preview`} />}
         <CardBody>
-          <CardText>{description}</CardText>
+          <CardText>
+            <p>{description}</p>
+            {tech && <p>Technologies: {tech.join(", ")}</p>}
+          </CardText>
           {link && <CardLink href={link}>Project Link</CardLink>}
           {github && (
             <CardLink className="link-unstyled" href={github}>
@@ -47,7 +55,9 @@ PostCard.propTypes = {
   img: PropTypes.string,
   src: PropTypes.string.isRequired,
   link: PropTypes.string,
-  github: PropTypes.string
+  github: PropTypes.string,
+  tech: PropTypes.arrayOf(PropTypes.string),
+  indev: PropTypes.bool
 };
 
 export default PostCard;

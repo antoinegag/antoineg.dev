@@ -9,9 +9,9 @@ export default function Home() {
       <Row>
         <Col md="4">
           <img
-            className="rounded-circle d-none d-md-block"
+            className="rounded d-none d-md-block"
             alt="portrait"
-            src="./assets/me_crop.jpeg"
+            src="./assets/me.jpeg"
           />
         </Col>
         <Col>
@@ -26,6 +26,20 @@ export default function Home() {
               Currently studying Computer Science at University of Sherbrooke
               and continuously working on my hobby projects, trying to make the
               world a better place&trade;
+            </p>
+            <h3>Skills</h3>
+            <p>
+              My stack of choice is NodeJS, GraphQL and React but I'm always
+              looking to learn and use other frameworks.
+              <br />
+              <i class="fab fa-2x fa-js mr-2" />
+              <i class="fab fa-2x fa-react mr-2" />
+              <i class="fab fa-2x fa-node" />
+            </p>
+            <p>
+              I'm also able to use several languages such as Java, C++ and
+              Python and learn to use the libraries required for whatever task
+              is at hand.
             </p>
             <h3>Socials</h3>
             <p className="lead text-black">
