@@ -4,20 +4,42 @@
     "description": "Analyze driving habits to improve your fuel efficiency",
     "src": "econav.md",
     "github": "https://github.com/antoinegag/econav",
-    "img": "./assets/econav.jpg"
+    "img": "./assets/econav.jpg",
+    "tech": ["Python", "OpenCV", "NodeJS", "React"],
+    "indev": true
+  },
+  "climactic": {
+    "title": "🌡️ Climactic",
+    "description": "Over the air environmental data collection and statistics.",
+    "src": "climactic.md",
+    "github": "https://github.com/antoinegag/climactic",
+    "img": "./assets/climactic.png",
+    "tech": [
+      "React",
+      "NodeJS",
+      "TypeScript",
+      "GraphQL",
+      "Bootstrap",
+      "Express",
+      "Formik",
+      "SQLite",
+      "Arduino"
+    ]
   },
   "sara": {
     "title": "🏠 S.a.r.a",
     "description": "Smart Assistant and Room Automation, my room automation system.",
     "src": "sara.md",
     "github": "https://github.com/antoinegag/sara",
-    "img": "./assets/sara-dash.png"
+    "img": "./assets/sara-dash.png",
+    "tech": ["React", "NodeJs", "PostgreSQL", "Arduino"]
   },
-  "climactic": {
-    "title": "📈 Climactic",
-    "description": "Over the air environmental data collection and statistics.",
-    "src": "climactic.md",
-    "github": "https://github.com/antoinegag/climactic",
-    "img": "./assets/climactic.png"
+  "curseforge-analytic-viewer": {
+    "title": "📈 CurseForge Analytics Viewer",
+    "description": "Visualize data from CurseForge analytics exports.",
+    "src": "curseforge-analytic-viewer.md",
+    "github": "https://github.com/antoinegag/curseforge-analytics-viewer",
+    "img": "./assets/curseforge.png",
+    "tech": ["React", "plotly.js", "Bootstrap"]
   }
 }
