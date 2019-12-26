@@ -1,6 +1,7 @@
 import React from "react";
 import PostCard from "./PostCard";
 import usePosts from "../../hooks/usePosts";
+import { Row, Col } from "reactstrap";
 import PropTypes from "prop-types";
 
 function PostList(props) {
@@ -10,14 +11,13 @@ function PostList(props) {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div>
+    <Row>
       {Object.keys(posts).map(post => (
-        <div key={post}>
+        <Col md="6" className="mb-3" key={post}>
           <PostCard slug={`/${type}/${post}`} {...posts[post]} />
-          <hr />
-        </div>
+        </Col>
       ))}
-    </div>
+    </Row>
   );
 }
 
