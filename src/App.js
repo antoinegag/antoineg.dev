@@ -1,11 +1,12 @@
 import React from "react";
 
+import Posts from "./pages/Posts";
+
 function App() {
   return (
     <div>
-      <header>antoineg.dev</header>
+      <Posts />
     </div>
   );
 }
-
 export default App;
