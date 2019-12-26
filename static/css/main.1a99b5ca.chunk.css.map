@@ -1,1 +1,0 @@
-{"version":3,"sources":["Home.css","App.css"],"names":[],"mappings":"AAAA,wDAGE,aACF,CCJA,IACE,cACF,CAEA,GACE,oBACF","file":"main.1a99b5ca.chunk.css","sourcesContent":[".link-unstyled,\n.link-unstyled:link,\n.link-unstyled:hover {\n  color: inherit;\n}\n","img {\n  max-width: 100%;\n}\n\nul {\n  list-style-type: none;\n}\n"]}
