@@ -1,8 +1,7 @@
-import React, { useState, useEffect, Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
 import unified from "unified";
 import parse from "remark-parse";
 import remark2react from "remark-react";
-import images from "remark-images";
 import rehype from "rehype-dom-parse";
 
 export default function useMarkdownPost(src) {
@@ -49,7 +48,7 @@ export default function useMarkdownPost(src) {
         }
       },
       remarkReactComponents: {
-        // img: props => <div>{JSON.stringify(props.scr)} - {props.src}</div>
+        // img: props => <div>{JSON.stringify(props)}</div>
       }
     })
     .processSync(markdown).contents;
