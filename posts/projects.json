@@ -1,8 +1,23 @@
 {
-  "sara": {
-    "title": "S.a.r.a - Smart Assistant and Room Automation",
-    "description": "my home automation system",
+  "econav": {
+    "title": "♻️ EcoNav",
+    "description": "Analyze driving habits to improve your fuel efficiency",
     "src": "sara.md",
-    "link": "https://github.com/antoinegag/sara"
+    "github": "https://github.com/antoinegag/econav",
+    "img": "./assets/econav.jpg"
+  },
+  "sara": {
+    "title": "🏠 S.a.r.a",
+    "description": "Smart Assistant and Room Automation, my room automation system.",
+    "src": "sara.md",
+    "github": "https://github.com/antoinegag/sara",
+    "img": "./assets/sara-dash.png"
+  },
+  "climactic": {
+    "title": "📈 Climactic",
+    "description": "Over the air environmental data collection and statistics.",
+    "src": "sara.md",
+    "github": "https://github.com/antoinegag/climactic",
+    "img": "./assets/climactic.png"
   }
 }
