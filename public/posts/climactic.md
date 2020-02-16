@@ -1,3 +1,5 @@
+## [Short demo (Click me!)](https://www.youtube.com/watch?v=FZ1Q37gA1m8)
+
 ## Goal
 
 Collect environmental data wirelessly in a slave-master system enabling as many nodes as wanted.

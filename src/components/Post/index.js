@@ -8,6 +8,7 @@ function Post(props) {
   const { loading, rendered } = useMarkdownPost(src);
 
   if (loading) return <div>Loading...</div>;
+
   if (!rendered) return <div>Error loading post</div>;
 
   return (

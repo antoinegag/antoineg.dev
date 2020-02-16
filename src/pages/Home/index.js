@@ -11,7 +11,7 @@ export default function Home() {
           <img
             className="rounded d-none d-md-block"
             alt="portrait"
-            src="./assets/me.jpeg"
+            src="./assets/me.jpg"
           />
         </Col>
         <Col>
