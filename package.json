@@ -4,15 +4,22 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
     "halogen": "^0.2.0",
+    "postcss-cli": "^7.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
+    "react-scroll": "^1.7.16",
     "reactstrap": "^8.2.0",
     "rehype-dom-parse": "^2.0.1",
     "remark-parse": "^7.0.2",
@@ -20,9 +27,10 @@
     "unified": "^8.4.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "start": "yarn run build:style && react-scripts start",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,7 +51,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "tailwindcss": "^1.2.0"
   },
   "homepage": "https://antoineg.dev/"
 }

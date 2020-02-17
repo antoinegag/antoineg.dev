@@ -15,7 +15,7 @@ export default function Projects() {
           <Project />
         </Route>
         <Route path={match.path}>
-          <h1>My Projects</h1>
+          <h1>Projects</h1>
           <PostList />
         </Route>
       </Switch>
