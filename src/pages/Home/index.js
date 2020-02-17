@@ -20,7 +20,7 @@ export default function Home() {
       <div className="xl:px-64 main flex justify-center items-center h-full">
         <div class="w-1/3 px-4 hidden md:block">
           <img
-            className="rounded-md d-none d-md-block"
+            className="d-none d-md-block"
             alt="portrait"
             src="./assets/me.jpg"
           />
@@ -32,11 +32,12 @@ export default function Home() {
           </p>
           <hr className="my-2 border-gray-500" />
           <p className="pb-5">
-            Computer Science student at{" "}
+            Studying computer science at{" "}
             <span className="font-extrabold" style={{ color: "#016735" }}>
               University of Sherbrooke
             </span>
-            , Web Developer at{" "}
+            <br />
+            Full stack web developer at{" "}
             <span className="font-extrabold" style={{ color: "#0f6973" }}>
               Agendrix
             </span>
@@ -92,6 +93,12 @@ export default function Home() {
           <p className="text-lg">Find me on the internet</p>
         </div>
         <div className="text-center text-xl">
+          <div className="my-2">
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+            <a href="mailto:antoine.gagnon5@usherbrooke.ca" target="_top">
+              antoine.gagnon5@usherbrooke.ca
+            </a>
+          </div>
           <div className="my-2">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             <a href="mailto:antoine.gagnon760+s@gmail.com" target="_top">

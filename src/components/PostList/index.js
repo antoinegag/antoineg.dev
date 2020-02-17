@@ -20,21 +20,24 @@ function PostList(props) {
               <div className="project-card text-center">
                 <h3 className="font-bold text-4xl py-4">{title}</h3>
                 <p className="text-xl">{description}</p>
+                {tech && (
+                  <div className="flex flex-wrap justify-center pt-3">
+                    {tech.map(entry => (
+                      <div
+                        className="mx-1 px-3 py-1 my-2 bg-blue-100"
+                        color="info"
+                      >
+                        {entry}
+                      </div>
+                    ))}
+                  </div>
+                )}
                 {img && (
                   <img
                     src={img}
                     className="mx-auto pt-3"
                     alt={`${title} preview`}
                   />
-                )}
-                {tech && (
-                  <div className="flex flex-wrap justify-center pt-3">
-                    {tech.map(entry => (
-                      <div className="mx-1 px-3 py-1 bg-blue-100" color="info">
-                        {entry}
-                      </div>
-                    ))}
-                  </div>
                 )}
               </div>
             </a>

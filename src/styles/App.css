@@ -3,7 +3,7 @@ img {
 }
 
 .tiktok:hover {
-  animation: tiktok-animation 0.5s linear infinite;
+  animation: tiktok-animation 0.4s linear infinite;
 }
 
 @keyframes tiktok-animation {
@@ -45,7 +45,6 @@ a {
   cursor: pointer;
 }
 
-/*effect-underline*/
 a.effect-underline:after {
   content: "";
   position: absolute;
@@ -74,7 +73,7 @@ a.effect-underline:hover:after {
 
 .project-card:hover {
   transition: all 0.3s;
-  transform: scale(1.03, 1.03);
-  -ms-transform: scale(1.03, 1.03); /* IE 9 */
-  -webkit-transform: scale(1.03, 1.03);
+  transform: scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01); /* IE 9 */
+  -webkit-transform: scale(1.01, 1.01);
 }
