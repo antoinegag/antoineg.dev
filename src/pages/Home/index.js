@@ -1,84 +1,119 @@
 import React from "react";
-import { Container, Row, Col, Jumbotron } from "reactstrap";
-import "./Home.css";
 import PostList from "../../components/PostList";
+import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowAltCircleDown,
+  faComments,
+  faMailBulk,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
-    <Container className="mt-5">
-      <Row>
-        <Col md="4">
+    <div className="h-full">
+      <div className="xl:px-64 main flex justify-center items-center h-full">
+        <div class="w-1/3 px-4 hidden md:block">
           <img
-            className="rounded d-none d-md-block"
+            className="rounded-md d-none d-md-block"
             alt="portrait"
             src="./assets/me.jpg"
           />
-        </Col>
-        <Col>
-          <Jumbotron className="about">
-            <h1 className="display-3">Antoine Gagnon</h1>
-            <p className="lead">
-              Web developer, IoT and electronics hobbyist, curious about
-              everything.
-            </p>
-            <hr className="my-2" />
-            <h3>About me</h3>
-            <p>
-              I'm currently studying Computer Science at University of
-              Sherbrooke and continuously working on my hobby projects, trying
-              to make the world a better place&trade;
-            </p>
-            <h3>Skills</h3>
-            <p>
-              My stack of choice is NodeJS, GraphQL and React but I'm always
-              looking to learn and use other frameworks.
-              <br />
-              <i class="fab fa-2x fa-js mr-2" />
-              <i class="fab fa-2x fa-react mr-2" />
-              <i class="fab fa-2x fa-node" />
-            </p>
-            <p>
-              I'm also able to use several languages such as Java, C++ and
-              Python and learn to use the libraries required for whatever task
-              is at hand.
-            </p>
-            <h3>Socials</h3>
-            <p className="lead text-black">
-              <a href="https://github.com/antoinegag" className="link-unstyled">
-                <i className="fab fa-2x fa-github mr-3 pointer" />
+        </div>
+        <div className="w-full md:w-2/3 px-4 text-lg">
+          <h1 className="text-6xl font-bold tiktok">Antoine Gagnon.</h1>
+          <p className="text-lg">
+            Web Developer, domotics enthusiast, curious about everything
+          </p>
+          <hr className="my-2 border-gray-500" />
+          <p className="pb-5">
+            Computer Science student at{" "}
+            <span className="font-extrabold" style={{ color: "#016735" }}>
+              University of Sherbrooke
+            </span>
+            , Web Developer at{" "}
+            <span className="font-extrabold" style={{ color: "#0f6973" }}>
+              Agendrix
+            </span>
+          </p>
+          <p>
+            <Link to="contact" spy={true} smooth={true} duration={600}>
+              <FontAwesomeIcon icon={faComments} className="mr-2" />
+              Get in touch
+            </Link>
+          </p>
+          <p>
+            <a href="https://github.com/antoinegag" className="link-unstyled">
+              <i className="fab fa-2x fa-github mr-3 pointer" />
+            </a>
+            <a
+              href="https://twitter.com/antoinegag_dev"
+              className="link-unstyled"
+            >
+              <i className="fab fa-2x fa-twitter twitter-logo logo mr-3" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/antoine-gagnon/"
+              className="link-unstyled"
+            >
+              <i className="fab fa-2x fa-linkedin mr-3 linkedin-logo logo" />
+            </a>
+          </p>
+        </div>
+        <div className="text-2xl text-center absolute bottom-0 pb-10">
+          <Link
+            className="effect-underline"
+            to="my-projects"
+            spy={true}
+            smooth={true}
+            duration={600}
+          >
+            Projects <FontAwesomeIcon icon={faArrowAltCircleDown} />
+          </Link>
+        </div>
+      </div>
+      <div className="w-full" id="my-projects">
+        <div className="text-center py-10">
+          <h2 className="py-2">Projects.</h2>
+          <p className="text-lg">
+            Programming is also my hobby, here are some of my personal projects
+          </p>
+        </div>
+        <PostList />
+      </div>
+      <div className="w-full second h-full" id="contact">
+        <div className="text-center py-10">
+          <h2 className="py-2">Get in touch.</h2>
+          <p className="text-lg">Find me on the internet</p>
+        </div>
+        <div className="text-center text-4xl">
+          <ul>
+            <li className="my-2">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+              <a href="mailto:antoine.gagnon760+s@gmail.com" target="_top">
+                antoine.gagnon760@gmail.com
               </a>
-              <a
-                href="https://twitter.com/antoinegag_dev"
-                className="link-unstyled"
-              >
-                <i className="fab fa-2x fa-twitter mr-3" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/antoine-gagnon/"
-                className="link-unstyled"
-              >
-                <i className="fab fa-2x fa-linkedin mr-3" />
-              </a>
-              <a
-                href="https://www.instagram.com/antoineg.dev/"
-                className="link-unstyled"
-              >
-                <i className="fab fa-2x fa-instagram" />
-              </a>
-            </p>
-          </Jumbotron>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h2>My projects</h2>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <PostList />
-        </Col>
-      </Row>
-    </Container>
+            </li>
+            <li className="my-2">
+              <FontAwesomeIcon icon={faTwitter} className="mr-2" />
+              <a href="https://twitter.com/antoinegag_dev">@antoinegag_dev</a>
+            </li>
+            <li className="my-2">
+              <FontAwesomeIcon icon={faGithub} className="mr-2" />
+              <a href="https://github.com/antoinegag">@antoinegag</a>
+            </li>
+            <li className="my-2">
+              <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+              <a href="https://www.linkedin.com/in/antoine-gagnon/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }

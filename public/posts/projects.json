@@ -1,12 +1,19 @@
 {
-  "econav": {
-    "title": "♻️ EcoNav",
-    "description": "Analyze driving habits to improve your fuel efficiency",
-    "src": "econav.md",
-    "github": "https://github.com/antoinegag/econav",
-    "img": "./assets/econav.jpg",
-    "tech": ["Python", "OpenCV", "NodeJS", "React"],
-    "indev": true
+  "sara": {
+    "title": "🏠 S.a.r.a",
+    "description": "Smart Assistant and Room Automation, my room automation system.",
+    "src": "sara.md",
+    "github": "https://github.com/antoinegag/sara",
+    "img": "./assets/sara-dash.png",
+    "tech": ["React", "NodeJs", "PostgreSQL", "Arduino"]
+  },
+  "sara-dashboard": {
+    "title": "🏎️ S.a.r.a Dashboard",
+    "description": "Real time dashboard using Sara and other APIs",
+    "src": "sara-dashboard.md",
+    "github": "https://github.com/antoinegag/sara",
+    "img": "./assets/sara-dashboard.png",
+    "tech": ["React", "Tailwind"]
   },
   "climactic": {
     "title": "🌡️ Climactic",
@@ -26,13 +33,14 @@
       "Arduino"
     ]
   },
-  "sara": {
-    "title": "🏠 S.a.r.a",
-    "description": "Smart Assistant and Room Automation, my room automation system.",
-    "src": "sara.md",
-    "github": "https://github.com/antoinegag/sara",
-    "img": "./assets/sara-dash.png",
-    "tech": ["React", "NodeJs", "PostgreSQL", "Arduino"]
+  "econav": {
+    "title": "♻️ EcoNav",
+    "description": "Analyze driving habits to improve your fuel efficiency",
+    "src": "econav.md",
+    "github": "https://github.com/antoinegag/econav",
+    "img": "./assets/econav.jpg",
+    "tech": ["Python", "OpenCV", "NodeJS", "React"],
+    "indev": true
   },
   "curseforge-analytic-viewer": {
     "title": "📈 CurseForge Analytics Viewer",
@@ -48,7 +56,7 @@
     "src": "antoineg.dev.md",
     "github": "https://github.com/antoinegag/antoineg.dev",
     "img": "./assets/markdown.png",
-    "tech": ["React", "Bootstrap", "Remark"],
+    "tech": ["React", "Tailwind", "Remark"],
     "indev": true
   }
 }
