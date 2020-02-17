@@ -91,27 +91,25 @@ export default function Home() {
           <h2 className="py-2">Get in touch.</h2>
           <p className="text-lg">Find me on the internet</p>
         </div>
-        <div className="text-center text-4xl">
-          <ul>
-            <li className="my-2">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-              <a href="mailto:antoine.gagnon760+s@gmail.com" target="_top">
-                antoine.gagnon760@gmail.com
-              </a>
-            </li>
-            <li className="my-2">
-              <FontAwesomeIcon icon={faTwitter} className="mr-2" />
-              <a href="https://twitter.com/antoinegag_dev">@antoinegag_dev</a>
-            </li>
-            <li className="my-2">
-              <FontAwesomeIcon icon={faGithub} className="mr-2" />
-              <a href="https://github.com/antoinegag">@antoinegag</a>
-            </li>
-            <li className="my-2">
-              <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
-              <a href="https://www.linkedin.com/in/antoine-gagnon/">LinkedIn</a>
-            </li>
-          </ul>
+        <div className="text-center text-xl">
+          <div className="my-2">
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+            <a href="mailto:antoine.gagnon760+s@gmail.com" target="_top">
+              antoine.gagnon760@gmail.com
+            </a>
+          </div>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faTwitter} className="mr-2" />
+            <a href="https://twitter.com/antoinegag_dev">@antoinegag_dev</a>
+          </div>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faGithub} className="mr-2" />
+            <a href="https://github.com/antoinegag">@antoinegag</a>
+          </div>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+            <a href="https://www.linkedin.com/in/antoine-gagnon/">LinkedIn</a>
+          </div>
         </div>
       </div>
     </div>
