@@ -28,7 +28,7 @@ export default function Home() {
         <div className="w-full md:w-2/3 px-4 text-lg">
           <h1 className="text-6xl font-bold tiktok">Antoine Gagnon.</h1>
           <p className="text-lg">
-            Web Developer, domotics enthusiast, curious about everything
+            Web Developer, smart things enthusiast, curious about everything
           </p>
           <hr className="my-2 border-gray-500" />
           <p className="pb-5">
