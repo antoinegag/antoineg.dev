@@ -100,12 +100,6 @@ export default function Home() {
             </a>
           </div>
           <div className="my-2">
-            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-            <a href="mailto:antoine.gagnon760+s@gmail.com" target="_top">
-              antoine.gagnon760@gmail.com
-            </a>
-          </div>
-          <div className="my-2">
             <FontAwesomeIcon icon={faTwitter} className="mr-2" />
             <a href="https://twitter.com/antoinegag_dev">@antoinegag_dev</a>
           </div>
