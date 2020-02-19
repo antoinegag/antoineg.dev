@@ -1,0 +1,33 @@
+{
+  "intro": "Web Developer, smart things enthusiast, curious about everything",
+  "bio": {
+    "school": "Studying computer science at University of Sherbrooke",
+    "work": "Full stack web developer at Agendrix"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Programming is my passion and hobby; Here are some of my projects.",
+    "sara": {
+      "description": "Smart Assistant and Room Automation, my room automation system."
+    },
+    "sara-dashboard": {
+      "description": "Real time dashboard using Sara and other APIs"
+    },
+    "climactic": {
+      "description": "Over the air environmental data collection and statistics"
+    },
+    "econav": {
+      "description": "Analyze driving habits to improve your fuel efficiency"
+    },
+    "curseforge-analytic-viewer": {
+      "description": "Visualize data from Curseforge analytics exports"
+    },
+    "personal-site": {
+      "description": "Renders Markdown to HTML to easily create posts"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "description": "Find me on the internet"
+  }
+}

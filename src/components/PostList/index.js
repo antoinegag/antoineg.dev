@@ -3,10 +3,12 @@ import PostCard from "./PostCard";
 import usePosts from "../../hooks/usePosts";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function PostList(props) {
   const { type } = props;
   const { loading, posts } = usePosts(type);
+  const { t } = useTranslation();
 
   if (loading) return <div>Loading...</div>;
 
@@ -19,7 +21,7 @@ function PostList(props) {
             <a href={github} target="_blank" rel="noopener noreferrer">
               <div className="project-card text-center">
                 <h3 className="font-bold text-4xl py-4">{title}</h3>
-                <p className="text-xl">{description}</p>
+                <p className="text-xl">{t(`projects.${post}.description`)}</p>
                 {tech && (
                   <div className="flex flex-wrap justify-center pt-3">
                     {tech.map(entry => (

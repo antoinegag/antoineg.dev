@@ -49,7 +49,7 @@
     "img": "./assets/curseforge.png",
     "tech": ["React", "plotly.js", "Bootstrap"]
   },
-  "antoineg.dev": {
+  "personal-site": {
     "title": "🏠 My Personal Website",
     "description": "Renders Markdown to HTML to easily create project entries",
     "src": "antoineg.dev.md",
