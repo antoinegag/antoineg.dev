@@ -1,12 +1,12 @@
 {
   "intro": "Développeur web, passioné de technologie, curieux sur tout",
   "bio": {
-    "school": "Étudiant en Science Informatiques à l'Université de Sherbrooke",
+    "school": "Étudiant en Sciences Informatiques à l'Université de Sherbrooke",
     "work": "Développeur web full stack chez Agendrix"
   },
   "projects": {
     "title": "Projets",
-    "description": "La programmation est ma passion et mon hobbie; Voici mes projects",
+    "description": "La programmation est ma passion et mon hobbie; Voici mes projets",
     "sara": {
       "description": "\"Smart Assistant and Room Automation\", mon système de domotique"
     },
@@ -17,10 +17,10 @@
       "description": "Collection de données environnementales par wifi"
     },
     "econav": {
-      "description": "Analyse des habitudes de conduites pour améliorer l'utilisation de carburant"
+      "description": "Analyse des habitudes de conduites pour améliorer l'utilisation du carburant"
     },
     "curseforge-analytic-viewer": {
-      "description": "Visualisation de données exportés de CurseForge"
+      "description": "Visualisation de données exportées de CurseForge"
     },
     "personal-site": {
       "description": "Affichage de Markdown en HTML pour façilement créer des articles"
