@@ -1,5 +1,5 @@
 {
-  "intro": "Web Developer, smart things enthusiast, curious about everything",
+  "intro": "Web Developer, smart things enthusiast, naturally curious.",
   "bio": {
     "school": "Studying computer science at University of Sherbrooke",
     "work": "Full stack web developer at Agendrix"
@@ -11,7 +11,7 @@
       "description": "Smart Assistant and Room Automation, my room automation system."
     },
     "sara-dashboard": {
-      "description": "Real time dashboard using Sara and other APIs"
+      "description": "Real time dashboard using S.a.r.a and other APIs"
     },
     "climactic": {
       "description": "Over the air environmental data collection and statistics"
