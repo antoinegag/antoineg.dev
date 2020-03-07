@@ -47,7 +47,7 @@ export default function Home() {
             {i18n.language === "fr" ? (
               <button onClick={() => i18n.changeLanguage("en")}>English</button>
             ) : (
-              <button onClick={() => i18n.changeLanguage("fr")}>Fançais</button>
+              <button onClick={() => i18n.changeLanguage("fr")}>Français</button>
             )}
           </div>
         </div>
