@@ -5,7 +5,7 @@ export const VSCO = props => {
     <div {...props}>
       <a
         className="flex items-center"
-        href="http://vsco.co/antoinega?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid"
+        href="https://vsco.co/antoinega?utm_source=user_grid&utm_medium=user_website&utm_campaign=link_to_grid"
       >
         <img
           style={{
@@ -13,7 +13,7 @@ export const VSCO = props => {
             height: "48px"
           }}
           className="mr-5"
-          src="http://assets.vsco.co/assets/images/assets/Logo_black_48.png"
+          src="https://assets.vsco.co/assets/images/assets/Logo_black_48.png"
           alt="VSCO Logo"
         />
         <span>
