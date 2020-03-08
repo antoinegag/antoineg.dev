@@ -12,12 +12,13 @@ const Instagram = props => {
             width: "48px",
             height: "48px"
           }}
+          className="white"
           src="./assets/instagram-glyph.png"
           alt="Instgram Logo"
         />
         <span className="mr-5">
-          <p className="text-3xl">Bits of life</p>
-          <p className="font-semibold">@antoine.gagn</p>
+          <p className="text-3xl font-semibold">Bits of life</p>
+          <p className="font-semibold text-blueish underline">@antoine.gagn</p>
         </span>
       </a>
     </div>

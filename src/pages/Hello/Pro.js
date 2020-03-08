@@ -9,13 +9,13 @@ export const Pro = props => {
             width: "48px",
             height: "48px"
           }}
-          className="mr-5"
+          className="mr-5 white"
           src="./assets/code.png"
           alt="VSCO Logo"
         />
         <span>
-          <p className="text-3xl">Professional</p>
-          <p className="font-semibold">antoineg.dev</p>
+          <p className="text-3xl font-semibold">Professional</p>
+          <p className="font-semibold text-blueish underline">antoineg.dev</p>
         </span>
       </a>
     </div>

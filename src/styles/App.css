@@ -79,6 +79,19 @@ a.effect-underline:hover:after {
 }
 
 .animated-bold-1 {
+  -moz-animation: makeColor 0.5s ease-in 0.5s forwards;
+  /* Firefox */
+  -webkit-animation: makeColor 0.5s ease-in 0.5s forwards;
+  /* Safari and Chrome */
+  -o-animation: makeColor 0.5s ease-in 0.5s forwards;
+  /* Opera */
+  animation: makeColor 0.5s ease-in 0.5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+.animated-bold-2 {
   -moz-animation: makeColor 1s ease-in 1s forwards;
   /* Firefox */
   -webkit-animation: makeColor 1s ease-in 1s forwards;
@@ -91,27 +104,14 @@ a.effect-underline:hover:after {
   animation-duration: 0.5s;
 }
 
-.animated-bold-2 {
-  -moz-animation: makeColor 1s ease-in 1.3s forwards;
-  /* Firefox */
-  -webkit-animation: makeColor 1s ease-in 1.3s forwards;
-  /* Safari and Chrome */
-  -o-animation: makeColor 1s ease-in 1.3s forwards;
-  /* Opera */
-  animation: makeColor 1s ease-in 1.3s forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-}
-
 .animated-bold-3 {
-  -moz-animation: makeColor 1s ease-in 2s forwards;
+  -moz-animation: makeColor 1s ease-in 1.2s forwards;
   /* Firefox */
-  -webkit-animation: makeColor 1s ease-in 2s forwards;
+  -webkit-animation: makeColor 1s ease-in 1.2s forwards;
   /* Safari and Chrome */
-  -o-animation: makeColor 1s ease-in 2s forwards;
+  -o-animation: makeColor 1s ease-in 1.2s forwards;
   /* Opera */
-  animation: makeColor 1s ease-in 2s forwards;
+  animation: makeColor 1s ease-in 1.2s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
@@ -138,4 +138,56 @@ a.effect-underline:hover:after {
 .hello-bg {
   background-color: #8ec5fc;
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+img.white {
+  filter: brightness(0) invert(1);
+}
+
+.question:before {
+  content: ".";
+  position: absolute;
+  margin-left: 5px;
+  -moz-animation: makeColor 1s ease-in 1.4s forwards;
+  /* Firefox */
+  -webkit-animation: makeColor 1s ease-in 1.4s forwards;
+  /* Safari and Chrome */
+  -o-animation: makeColor 1s ease-in 1.4s forwards;
+  /* Opera */
+  animation: makeColor 1s ease-in 1.4s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+.slide-in {
+  opacity: 0;
+  -moz-animation: slideIn 0.5s ease-in 2s forwards;
+  /* Firefox */
+  -webkit-animation: slideIn 0.5s ease-in 2s forwards;
+  /* Safari and Chrome */
+  -o-animation: slideIn 0.5s ease-in 2s forwards;
+  /* Opera */
+  animation: slideIn 0.5s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

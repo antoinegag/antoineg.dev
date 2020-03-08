@@ -13,12 +13,14 @@ export const VSCO = props => {
             height: "48px"
           }}
           className="mr-5"
-          src="https://assets.vsco.co/assets/images/assets/Logo_black_48.png"
+          src="https://assets.vsco.co/assets/images/assets/Logo_white_48.png"
           alt="VSCO Logo"
         />
         <span>
-          <p className="text-3xl">Pictures</p>
-          <p className="font-semibold">vsco.co/antoinega</p>
+          <p className="text-3xl font-semibold">Pictures</p>
+          <p className="font-semibold text-blueish underline">
+            vsco.co/antoinega
+          </p>
         </span>
       </a>
     </div>
