@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { VSCO } from "./VSCO";
 import Instagram from "./Instagram";
 import { Pro } from "./Pro";
+import Spotify from "./Spotify";
 
 export const Hello = () => {
   return (
@@ -15,6 +16,8 @@ export const Hello = () => {
           <Instagram />
           <hr className="my-5" />
           <Pro />
+          <hr className="my-5" />
+          <Spotify />
         </div>
       </div>
     </div>
