@@ -2,11 +2,15 @@
   "intro": "Web Developer, smart things enthusiast, naturally curious.",
   "bio": {
     "school": "Studying computer science at University of Sherbrooke",
-    "work": "Full stack web developer at Agendrix"
+    "work": "Full stack web developer at Agendrix",
+    "looking_internship": "I'm looking for an internship this fall. Open to all new opportunity to learn!"
   },
   "projects": {
     "title": "Projects",
     "description": "Programming is my passion and hobby; Here are some of my projects.",
+    "covid19-dashboard": {
+      "description": "A dashboard providing day-to-day information on Covid-19"
+    },
     "sara": {
       "description": "Smart Assistant and Room Automation, my room automation system."
     },
@@ -28,6 +32,6 @@
   },
   "contact": {
     "title": "Get in touch",
-    "description": "Find me on the internet"
+    "description": "I am looking for an internship this fall in any domain related to computer science. Contact me with your challenge!"
   }
 }

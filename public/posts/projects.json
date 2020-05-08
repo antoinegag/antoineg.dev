@@ -1,4 +1,10 @@
 {
+  "covid19-dashboard": {
+    "title": "📈 Covid-19 Dashboard",
+    "github": "https://github.com/antoinegag/covid19-dashboard",
+    "img": "./assets/covid19.png",
+    "tech": ["React", "Tailwind", "REST API"]
+  },
   "sara": {
     "title": "🏠 S.a.r.a",
     "description": "Smart Assistant and Room Automation, my room automation system.",
