@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = props => {
+export const Header = (props) => {
   return (
     <div {...props}>
       <p className="text-4xl text-left">Well,</p>
