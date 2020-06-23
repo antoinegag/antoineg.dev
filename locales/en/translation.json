@@ -1,8 +1,8 @@
 {
-  "intro": "Web Developer, smart things enthusiast, naturally curious.",
+  "intro": "Curiosity driven maker, Web Developer, tech enthusiast",
   "bio": {
-    "school": "Studying computer science at University of Sherbrooke",
-    "work": "Full stack web developer at Agendrix",
+    "school": "Computer science student at University of Sherbrooke",
+    "work": "Web developer at Coveo (soon!)",
     "looking_internship": "I'm looking for an internship this fall. Open to all new opportunity to learn!"
   },
   "projects": {
@@ -32,6 +32,6 @@
   },
   "contact": {
     "title": "Get in touch",
-    "description": "I am looking for an internship this fall in any domain related to computer science. Contact me with your challenge!"
+    "description": "Find me on the internet"
   }
 }
