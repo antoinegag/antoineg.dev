@@ -32,9 +32,9 @@ export default function Home() {
           <p className="pb-5">
             {t("bio.school")}
             <br />
-            {/* {t("bio.work")} */}
+            {t("bio.work")}
           </p>
-          <p className="text-xl font-bold mb-2">
+          {/* <p className="text-xl font-bold mb-2">
             <p className="mb-2">
               <FontAwesomeIcon
                 icon={faExclamationCircle}
@@ -46,7 +46,7 @@ export default function Home() {
               <FontAwesomeIcon icon={faComments} className="mr-2" />
               {t("contact.title")}
             </Link>
-          </p>
+          </p> */}
           <div>
             {i18n.language === "fr" ? (
               <button onClick={() => i18n.changeLanguage("en")}>English</button>

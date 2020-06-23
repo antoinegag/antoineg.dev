@@ -2,7 +2,7 @@
   "intro": "Développeur web, passioné de technologie, curieux de nature.",
   "bio": {
     "school": "Étudiant en Sciences Informatiques à l'Université de Sherbrooke",
-    "work": "Développeur web full stack chez Agendrix",
+    "work": "Développeur web chez Coveo (bientôt!)",
     "looking_internship": "Je suis actuellement à la recherche d'un stage cette automne. Ouvert à toute opportunité d'apprendre quelque chose de nouveau!"
   },
   "projects": {
@@ -32,6 +32,6 @@
   },
   "contact": {
     "title": "Entrer en contact",
-    "description": "Je suis à la recherche d'un stage cette automne dans n'importe quel domaine des sciences informatiques. Contactez moi avec votre défi!"
+    "description": "Trouvez moi sur Internet"
   }
 }
