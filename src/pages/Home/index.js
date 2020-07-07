@@ -34,19 +34,19 @@ export default function Home() {
             <br />
             {t("bio.work")}
           </p>
-          {/* <p className="text-xl font-bold mb-2">
-            <p className="mb-2">
+          <p className="mb-2">
+            {/* <p className="mb-2">
               <FontAwesomeIcon
                 icon={faExclamationCircle}
                 className="text-blue-700 mr-2"
               />
               {t("bio.looking_internship")}
-            </p>
+            </p> */}
             <Link to="contact" spy={true} smooth={true} duration={600}>
               <FontAwesomeIcon icon={faComments} className="mr-2" />
               {t("contact.title")}
             </Link>
-          </p> */}
+          </p>
           <div>
             {i18n.language === "fr" ? (
               <button onClick={() => i18n.changeLanguage("en")}>English</button>
