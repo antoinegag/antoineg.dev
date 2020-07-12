@@ -8,6 +8,10 @@
   "projects": {
     "title": "Projects",
     "description": "Programming is my passion and hobby; Here are some of my projects.",
+    "touch": "Touch a project to learn more",
+    "haveiwatched": {
+      "description": "Track and share the shows you watch"
+    },
     "covid19-dashboard": {
       "description": "A dashboard providing day-to-day information on Covid-19"
     },
