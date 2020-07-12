@@ -74,6 +74,7 @@ export default function Home() {
         <div className="text-center py-10">
           <h2 className="py-2">{t("projects.title")}.</h2>
           <p className="text-lg">{t("projects.description")}</p>
+          <p className="lg:hidden">{t("projects.touch")}</p>
         </div>
         <PostList />
       </div>
