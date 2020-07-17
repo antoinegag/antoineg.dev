@@ -1,6 +1,6 @@
 import React from "react";
 
-const Instagram = props => {
+const Instagram = (props) => {
   return (
     <div {...props}>
       <a
@@ -10,7 +10,7 @@ const Instagram = props => {
         <img
           style={{
             width: "48px",
-            height: "48px"
+            height: "48px",
           }}
           className="white"
           src="./assets/instagram-glyph.png"
@@ -18,7 +18,8 @@ const Instagram = props => {
         />
         <span className="mr-5">
           <p className="text-3xl font-semibold">Bits of life</p>
-          <p className="font-semibold text-blueish underline">@antoine.gagn</p>
+          <p>Happy moments</p>
+          <p className="font-semibold text-blue-700 underline">@antoine.gagn</p>
         </span>
       </a>
     </div>

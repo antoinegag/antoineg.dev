@@ -4,7 +4,7 @@ const Snapchat = (props) => {
   return (
     <div {...props}>
       <a
-        className="flex items-center flex-row-reverse text-right"
+        className="flex items-center"
         href="https://www.snapchat.com/add/antoine_12"
       >
         <img
@@ -16,9 +16,10 @@ const Snapchat = (props) => {
           src="./assets/snap.png"
           alt="Snapchat Ghost Logo"
         />
-        <span className="mr-5">
+        <span className="ml-5">
           <p className="text-3xl font-semibold">Cat pictures</p>
-          <p className="font-semibold text-blueish underline">antoine_12</p>
+          <p>(mostly)</p>
+          <p className="font-semibold text-blue-700 underline">antoine_12</p>
         </span>
       </a>
     </div>

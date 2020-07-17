@@ -137,7 +137,8 @@ a.effect-underline:hover:after {
 
 .hello-bg {
   background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  /* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%); */
+  background-image: linear-gradient(62deg, #fbeec1 -40%, #659dbd 80%);
 }
 
 img.white {
@@ -162,13 +163,13 @@ img.white {
 
 .slide-in {
   opacity: 0;
-  -moz-animation: slideIn 0.5s ease-in 2s forwards;
+  -moz-animation: slideIn 0.5s ease-in 0.1s forwards;
   /* Firefox */
-  -webkit-animation: slideIn 0.5s ease-in 2s forwards;
+  -webkit-animation: slideIn 0.5s ease-in 0.1s forwards;
   /* Safari and Chrome */
-  -o-animation: slideIn 0.5s ease-in 2s forwards;
+  -o-animation: slideIn 0.5s ease-in 0.1s forwards;
   /* Opera */
-  animation: slideIn 0.5s ease-in 2s forwards;
+  animation: slideIn 0.5s ease-in 0.1s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
