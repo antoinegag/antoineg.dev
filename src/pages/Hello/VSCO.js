@@ -17,7 +17,6 @@ export const VSCO = (props) => {
         />
         <span className="ml-5">
           <p className="text-3xl font-semibold">Pictures</p>
-          <p>(cats again)</p>
           <p className="font-semibold text-blue-700 underline">
             vsco.co/antoinega
           </p>
