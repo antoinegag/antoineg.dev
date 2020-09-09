@@ -39,7 +39,7 @@ export default function Contact() {
         </div>
         <div className="my-2">
           <FontAwesomeIcon icon={faTwitter} className="mr-2" />
-          <a href="https://twitter.com/antoinegag_dev">@antoinegag_dev</a>
+          <a href="https://twitter.com/antoineg_dev">@antoineg_dev</a>
         </div>
       </div>
     </div>
