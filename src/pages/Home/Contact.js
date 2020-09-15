@@ -18,6 +18,10 @@ export default function Contact() {
         <p className="text-lg">{t("contact.description")}</p>
       </div>
       <div className="text-center text-xl">
+        <div className="my-2">
+          <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+          <a href="mailto:contact@antoineg.dev">contact@antoineg.dev</a>
+        </div>
         <div className="my-2 flex items-center justify-center">
           <a
             href="mailto:antoine.gagnon5@usherbrooke.ca"
