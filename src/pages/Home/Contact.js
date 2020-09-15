@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 export default function Contact() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="w-full second h-full" id="contact">
       <div className="text-center py-10">
         <h2 className="py-2">{t("contact.title")}.</h2>
         <p className="text-lg">{t("contact.description")}</p>

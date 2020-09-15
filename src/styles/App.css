@@ -6,6 +6,19 @@ img {
   animation: tiktok-animation 0.4s linear infinite;
 }
 
+.titokalways {
+  animation: tiktok-animation 0.4s linear infinite;
+}
+
+.hupsidedown:hover {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
 @keyframes tiktok-animation {
   0%,
   100% {
