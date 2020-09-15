@@ -6,11 +6,16 @@ import {
   faArrowAltCircleDown,
   faComments,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Hero() {
   const { t, i18n } = useTranslation();
   return (
-    <div className="xl:px-64 main flex justify-center items-center h-full">
+    <div className="xl:px-64 main flex justify-center items-center min-h-full">
       <div class="w-1/3 px-4 hidden md:block">
         <img
           className="d-none d-md-block"
@@ -37,10 +42,29 @@ export default function Hero() {
               />
               {t("bio.looking_internship")}
             </p> */}
-          <Link to="contact" spy={true} smooth={true} duration={600}>
+
+          <Link
+            className="underline"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={600}
+          >
             <FontAwesomeIcon icon={faComments} className="mr-2" />
             {t("contact.title")}
           </Link>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faGithub} className="mr-2" />
+            <a href="https://github.com/antoinegag">@antoinegag</a>
+          </div>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faTwitter} className="mr-2" />
+            <a href="https://twitter.com/antoineg_dev">@antoineg_dev</a>
+          </div>
+          <div className="my-2">
+            <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
+            <a href="https://www.linkedin.com/in/antoine-gagnon/">LinkedIn</a>
+          </div>
         </p>
         <div>
           {i18n.language === "fr" ? (
