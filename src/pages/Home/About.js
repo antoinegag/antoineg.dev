@@ -43,7 +43,7 @@ export default function About() {
                     className="mr-2"
                     alt="Java logo"
                   />
-                  Javascrip + TS
+                  Javascript + TS
                 </div>
                 <div className="mx-2">
                   <FontAwesomeIcon icon={faDatabase} className="mr-2" />
