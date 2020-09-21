@@ -1,16 +1,9 @@
 {
-  "haveiwatched": {
-    "title": "📺 Have I Watched?",
-    "tech": [
-      "React",
-      "Tailwind",
-      "TypeScript",
-      "NodeJS",
-      "PostgreSQL",
-      "Docker"
-    ],
-    "indev": true,
-    "url": "https://haveiwatched.com"
+  "modtoberfest": {
+    "title": "Modtoberfest",
+    "github": "https://github.com/Modtoberfest/Modtoberfest-Site",
+    "img": "./assets/modtoberfest.png",
+    "tech": ["NextJS", "ReactJS", "Tailwind", "PostgreSQL"]
   },
   "covid19-dashboard": {
     "title": "📈 Covid-19 Dashboard",
@@ -50,6 +43,19 @@
       "SQLite",
       "Arduino"
     ]
+  },
+  "haveiwatched": {
+    "title": "📺 Have I Watched?",
+    "tech": [
+      "React",
+      "Tailwind",
+      "TypeScript",
+      "NodeJS",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "indev": true,
+    "url": "https://haveiwatched.com"
   },
   "econav": {
     "title": "♻️ EcoNav",

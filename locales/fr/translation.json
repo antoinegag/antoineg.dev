@@ -22,6 +22,9 @@
     "title": "Projets",
     "description": "La programmation est ma passion et mon hobbie; Voici mes projets personnels",
     "touch": "Touchez un projet pour plus d'information",
+    "modtoberfest": {
+      "description": "Platforme pour suivre et afficher le progres des participants du Modtoberfest, un évènement inspiré de Hacktoberfest."
+    },
     "haveiwatched": {
       "description": "Suivez et partagez vos series"
     },
