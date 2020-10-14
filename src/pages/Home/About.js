@@ -24,7 +24,7 @@ export default function About() {
         <div className="w-full md:w-2/3 px-4 text-lg">
           <h1 className="text-4xl md:text-6xl font-bold hidden md:flex md:flex-wrap">
             <div className="whitespace-no-wrap">{t("about.title-1")}</div>
-            <div className="hupsidedown ml-5 text-greenish-dark underline">{t("about.title-2")}</div>.
+            <div className="hupsidedown ml-5 text-greenish-dark">{t("about.title-2")}</div>.
           </h1>
           <h1 className="block md:hidden text-3xl">{t("about.title")}</h1>
           <p className="mb-3">{t("about.text")}</p>
