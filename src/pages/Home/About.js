@@ -24,7 +24,7 @@ export default function About() {
         <div className="w-full md:w-2/3 px-4 text-lg">
           <h1 className="text-4xl md:text-6xl font-bold hidden md:flex md:flex-wrap">
             <div className="whitespace-no-wrap">{t("about.title-1")}</div>
-            <div className="hupsidedown ml-5">{t("about.title-2")}</div>.
+            <div className="hupsidedown ml-5 text-greenish-dark underline">{t("about.title-2")}</div>.
           </h1>
           <h1 className="block md:hidden text-3xl">{t("about.title")}</h1>
           <p className="mb-3">{t("about.text")}</p>
@@ -32,7 +32,7 @@ export default function About() {
           <p>{t("about.projects")}</p>
           <hr className="my-2 border-gray-500" />
           <div>
-            <div className="mt-2 text-2xl font-bold">{t("about.tools")}</div>
+            <div className="mt-2 text-2xl font-bold text-greenish-dark">{t("about.tools")}</div>
             <div>
               <div className="mt-2 text-xl mb-1">{t("about.languages")}</div>
               <div className="ml-2 flex flex-wrap">
@@ -150,7 +150,7 @@ export default function About() {
       <div className="text-2xl text-center self-end pb-10 mx-auto">
         <Link to="my-projects" spy={true} smooth={true} duration={600}>
           {t("projects.title")}
-          <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2" />
+          <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2 text-greenish-dark" />
         </Link>
       </div>
     </div>

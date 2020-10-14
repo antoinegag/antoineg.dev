@@ -25,7 +25,7 @@ export default function Hero() {
         />
       </div>
       <div className="w-full md:w-2/3 px-4 text-lg">
-        <h1 className="text-4xl md:text-6xl font-bold tiktok">
+        <h1 className="text-4xl md:text-6xl font-bold glitch">
           Antoine Gagnon.
         </h1>
         <p className="text-lg">{t("intro")}</p>
@@ -44,28 +44,28 @@ export default function Hero() {
               {t("bio.looking_internship")}
             </p> */}
 
-          <div className="my-2">
-            <FontAwesomeIcon icon={faGithub} className="mr-2" />
-            <a href="https://github.com/antoinegag">@antoinegag</a>
+          <div className="my-2 hover:underline">
+            <FontAwesomeIcon icon={faGithub} className="mr-2 hover:text-leather-dark" />
+            <a href="https://github.com/antoinegag" className="">@antoinegag</a>
           </div>
-          <div className="my-2">
+          <div className="my-2 hover:underline">
             <FontAwesomeIcon icon={faTwitter} className="mr-2" />
             <a href="https://twitter.com/antoineg_dev">@antoineg_dev</a>
           </div>
-          <div className="my-2">
+          <div className="my-2 hover:underline">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             <a href="mailto:contact@antoineg.dev">contact@antoineg.dev</a>
           </div>
-          <div className="my-2">
+          <div className="my-2 hover:underline">
             <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
             <a href="https://www.linkedin.com/in/antoine-gagnon/">LinkedIn</a>
           </div>
         </p>
         <div>
           {i18n.language === "fr" ? (
-            <button onClick={() => i18n.changeLanguage("en")}>English</button>
+            <button onClick={() => i18n.changeLanguage("en")}><span className="hover:underline">English</span></button>
           ) : (
-            <button onClick={() => i18n.changeLanguage("fr")}>Français</button>
+            <button onClick={() => i18n.changeLanguage("fr")}><span className="hover:underline">Français</span></button>
           )}
         </div>
       </div>
@@ -78,7 +78,7 @@ export default function Hero() {
           duration={600}
         >
           {t("about.link")}
-          <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2" />
+          <FontAwesomeIcon icon={faArrowAltCircleDown} className="ml-2 text-greenish-dark" />
         </Link>
       </div>
     </div>

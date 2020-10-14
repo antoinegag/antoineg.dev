@@ -128,6 +128,10 @@ module.exports = {
         700: "#b83280",
         800: "#97266d",
         900: "#702459"
+      }, 
+      greenish: {
+        light: "#46b59b",
+        dark: "#017e7f"
       }
     },
     spacing: {

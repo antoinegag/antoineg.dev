@@ -2,12 +2,18 @@ img {
   max-width: 100%;
 }
 
-.tiktok:hover {
-  animation: tiktok-animation 0.4s linear infinite;
+.glitch:hover {
+  animation: glitch-animation 0.4s linear infinite;
 }
 
-.titokalways {
-  animation: tiktok-animation 0.4s linear infinite;
+.stacked {
+  color: #a32512;
+  
+  text-shadow: 
+  5px 5px 0px #ff5858, 
+  10px 10px 0px #efa032, 
+  15px 15px 0px #46b59b, 
+  20px 20px 0px #017e7f
 }
 
 .hupsidedown:hover {
@@ -19,7 +25,7 @@ img {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
-@keyframes tiktok-animation {
+@keyframes glitch-animation {
   0%,
   100% {
     text-shadow: -2px -2px 0 #0ff, 2px 2px 0 #f00;
