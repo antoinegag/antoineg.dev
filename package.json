@@ -22,7 +22,7 @@
     "react-dom": "^16.12.0",
     "react-i18next": "^11.3.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.4.3",
     "react-scroll": "^1.7.16",
     "reactstrap": "^8.2.0",
     "rehype-dom-parse": "^2.0.1",
@@ -32,10 +32,10 @@
   },
   "scripts": {
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-    "start": "yarn run build:style && react-scripts start",
-    "predeploy": "yarn run build",
+    "start": "npm run build:style && react-scripts start",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "yarn run build:style && react-scripts build",
+    "build": "npm run build:style && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
