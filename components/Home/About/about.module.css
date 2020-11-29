@@ -1,6 +1,6 @@
 .about {
   /* background: linear-gradient(45deg, hsl(196, 40%, 91%), hsl(196, 21%, 97%)); */
-  @apply xl:px-64 justify-center items-center w-full py-40 flex flex-col text-black md:text-white;
+  @apply xl:px-64 justify-center items-center min-h-screen w-full py-40 flex flex-col text-white;
 }
 
 .upsidedown:hover {

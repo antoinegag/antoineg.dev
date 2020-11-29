@@ -1,20 +1,17 @@
 import React from "react";
 import styles from "./about.module.css";
 import classNames from "classnames";
-import { Parallax } from "react-parallax";
 import Pulse from "react-reveal/Pulse";
+import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 
 export default function About() {
   return (
-    <Parallax
-      bgImage="/images/desk1.jpg"
-      bgImageAlt="Desktop"
-      bgClassName="hidden md:block"
-      strength={600}
+    <ParallaxBanner
+      layers={[{ image: "/images/desk1.jpg", amount: 0.2 }]}
       className={styles.about}
     >
       <div className="flex flex-grow items-center justify-center">
-        <div className="w-full md:w-2/3 px-4 text-xl blurred p-10 h-full">
+        <div className="w-full md:w-2/3 px-4 text-xl blurred p-10">
           <h1 className="text-4xl md:text-6xl hidden md:flex md:flex-wrap">
             <div className="whitespace-no-wrap">Welcome to my</div>
             <div
@@ -44,14 +41,16 @@ export default function About() {
             for events to custom IoT devices, anything goes.
           </p>
         </div>
-        <div className="w-1/3 px-4 hidden md:block">
-          <img
-            className="d-none d-md-block"
-            alt="portrait"
-            src="/images/action.jpg"
-          />
+        <div className="w-1/3 px-4 hidden md:block z-50">
+          <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+            <img
+              className="d-none d-md-block"
+              alt="portrait"
+              src="/images/action.jpg"
+            />
+          </Parallax>
         </div>
       </div>
-    </Parallax>
+    </ParallaxBanner>
   );
 }

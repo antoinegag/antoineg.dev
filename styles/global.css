@@ -34,3 +34,7 @@ h3 {
   /* Add the blur effect */
   backdrop-filter: blur(8px);
 }
+
+.ztop {
+  z-index: 999;
+}
