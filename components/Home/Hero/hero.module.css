@@ -1,0 +1,4 @@
+.hero {
+  background: linear-gradient(-45deg, hsl(196, 40%, 91%), hsl(196, 21%, 97%));
+  @apply xl:px-64 flex justify-center items-center min-h-full;
+}

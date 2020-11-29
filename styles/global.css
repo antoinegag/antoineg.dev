@@ -1,0 +1,36 @@
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+h1 {
+  @apply text-6xl;
+  @apply font-semibold;
+  @apply py-5;
+}
+
+h2 {
+  @apply text-5xl;
+  @apply font-semibold;
+  @apply py-4;
+}
+
+h3 {
+  @apply text-4xl;
+  @apply py-4;
+}
+
+.blurred {
+  /* Add the blur effect */
+  backdrop-filter: blur(8px);
+}
