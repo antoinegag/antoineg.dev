@@ -3,9 +3,9 @@ import { Parallax } from "react-scroll-parallax";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-evenly py-12 md:py-16 overflow-hidden bg-gray-800">
+    <div className="flex items-center justify-evenly py-12 md:py-32 bg-gray-800 overflow-hidden">
       <Parallax y={[175, -175]}>
-        <div className="font-bold text-2xl md:text-8xl stroke-white">
+        <div className="font-bold text-2xl md:text-8xl stroke-yellow">
           PROJECTS
         </div>
       </Parallax>
@@ -13,7 +13,7 @@ export default function Header() {
         PROJECTS
       </div>
       <Parallax y={[-175, 175]}>
-        <div className="font-bold text-2xl md:text-8xl stroke-white">
+        <div className="font-bold text-2xl md:text-8xl stroke-yellow">
           PROJECTS
         </div>
       </Parallax>

@@ -1,15 +1,30 @@
+import { GetStaticProps } from "next";
 import React from "react";
 import About from "../components/Home/About";
 import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
+import { getProjectsData, ProjectData } from "../lib/markdownPosts";
 
-export default function index() {
+interface Props {
+  projects: ProjectData[];
+}
+
+export default function index({ projects }: Props) {
   return (
     <div className="h-full no-scrollbar">
       <Hero />
       <About />
-      <Projects />
-      <div className="min-h-screen bg-gray-800">Noise</div>
+      <Projects projects={projects} />
+      <div className="min-h-screen bg-gray-800">stuff</div>
     </div>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const projects = getProjectsData();
+  return {
+    props: {
+      projects,
+    },
+  };
+};

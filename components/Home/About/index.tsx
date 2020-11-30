@@ -7,15 +7,24 @@ import { ParallaxBanner, Parallax } from "react-scroll-parallax";
 export default function About() {
   return (
     <ParallaxBanner
-      layers={[{ image: "/images/desk1.jpg", amount: 0.2 }]}
+      layers={[
+        {
+          image: "/images/desk1.jpg",
+          amount: 0.2,
+          props: { className: "md:right-16" },
+        },
+      ]}
       className={styles.about}
     >
-      <div className="flex flex-grow items-center justify-center">
+      <div className="flex flex-grow items-center justify-center right">
         <div className="w-full md:w-2/3 px-4 text-xl blurred p-10">
           <h1 className="text-4xl md:text-6xl hidden md:flex md:flex-wrap">
             <div className="whitespace-no-wrap">Welcome to my</div>
             <div
-              className={classNames("ml-5 font-semibold", styles.upsidedown)}
+              className={classNames(
+                "ml-5 font-semibold text-yellow-500",
+                styles.upsidedown
+              )}
             >
               <Pulse>world</Pulse>
             </div>
@@ -37,8 +46,8 @@ export default function About() {
             small.
           </p>
           <p>
-            My projects range from analytics dashboard to tailor made experience
-            for events to custom IoT devices, anything goes.
+            My projects range from analytics dashboards to tailor-made event
+            experiences to custom IoT devices, anything goes
           </p>
         </div>
         <div className="w-1/3 px-4 hidden md:block z-50">

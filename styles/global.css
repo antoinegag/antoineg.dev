@@ -27,7 +27,16 @@ h2 {
 
 h3 {
   @apply text-4xl;
+  @apply font-semibold;
   @apply py-4;
+}
+
+h4 {
+  @apply text-3xl font-semibold py-2;
+}
+
+ul {
+  @apply list-disc;
 }
 
 .blurred {
@@ -43,6 +52,23 @@ h3 {
 
 .stroke-white {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+}
+
+.stroke-yellow {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(245, 158, 11);
+}
+
+.yellow-wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(245, 158, 11);
+}
+
+.no-overflow-x {
+  /* overflow-y: visible; */
+  /* overflow-x: hidden; */
 }
