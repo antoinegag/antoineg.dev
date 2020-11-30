@@ -1,21 +1,22 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./hero.module.css";
-import Bounce from "react-reveal/Bounce";
+import { Parallax } from "react-scroll-parallax";
+import { isIPad13, isMobile } from "react-device-detect";
 
 export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className="w-1/3 px-4 hidden md:block">
-        <Bounce left>
+        <Parallax y={[75, -75]}>
           <img
             className="d-none d-md-block"
             alt="portrait"
             src="/images/portrait.jpg"
           />
-        </Bounce>
+        </Parallax>
       </div>
       <div className="w-full md:w-2/3 px-4 text-xl">
-        <Bounce right>
+        <Parallax y={[-50, 50]} disabled={isMobile && !isIPad13}>
           <h1 className="text-4xl md:text-6xl font-semibold">
             Antoine Gagnon.
           </h1>
@@ -30,7 +31,7 @@ export default function Hero() {
             <br />
             Web developer at Coveo R&D
           </p>
-        </Bounce>
+        </Parallax>
       </div>
     </div>
   );

@@ -35,6 +35,14 @@ h3 {
   backdrop-filter: blur(8px);
 }
 
-.ztop {
-  z-index: 999;
+.stroke-black {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.stroke-white {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
 }
