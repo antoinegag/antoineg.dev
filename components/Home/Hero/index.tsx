@@ -33,6 +33,11 @@ export default function Hero() {
           </p>
         </Parallax>
       </div>
+      <div className={styles.more}>
+        <a>
+          <span></span>
+        </a>
+      </div>
     </div>
   );
 }
