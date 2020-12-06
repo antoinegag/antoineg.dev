@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectData } from "../../../lib/markdownPosts";
+import Pyramid from "../../3D/Pyramid";
 import Header from "./Header";
 import AntoineGDev from "./Items/AntoineGDev";
 import CFAnalytics from "./Items/CFAnalytics";
+import Climactic from "./Items/Climactic";
 import Modtoberfest from "./Items/Modtoberfest";
 import Sara from "./Items/Sara";
 import styles from "./projects.module.css";
@@ -11,14 +13,16 @@ export default function Projects({ projects }: { projects: ProjectData[] }) {
   return (
     <div className={styles.projects}>
       <Header />
-      <div className="px-5 md:px-10">
-        {/* There is a post for each project but for the sake of customization, let's not just map them */}
+      <Pyramid className="min-h-screen sticky top-0 z-0" />
+      <div className="px-5 z-10">
         <AntoineGDev />
         <Sara />
-        <Modtoberfest />
-        <CFAnalytics />
+        <div className="xl:flex">
+          <Modtoberfest />
+          <CFAnalytics />
+        </div>
+        <Climactic />
       </div>
-      <div></div>
     </div>
   );
 }

@@ -1,13 +1,19 @@
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
-import Image from "next/image";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { ParallaxBanner } from "react-scroll-parallax";
+import styles from "../projects.module.css";
 import { isIPad13, isMobile } from "react-device-detect";
+import classNames from "classnames";
 
 export default function Sara() {
   return (
-    <div className="md:flex flex-wrap md:px-12 xl:px-32 md:min-h-screen items-center">
+    <div
+      className={classNames(
+        "md:flex flex-wrap md:px-12 xl:px-32 md:min-h-screen items-center font-semibold",
+        styles.project
+      )}
+    >
       <div className="md:w-2/3 pb-5 z-10">
         <Title>
           <div className="flex flex-wrap items-center">
@@ -27,7 +33,7 @@ export default function Sara() {
         </div>
         <div className="yellow-wavy md:text-xl cursor-pointer">
           {" "}
-          <Link href="/projects/modtoberfest">
+          <Link href="/projects/sara">
             <a>Read more</a>
           </Link>
         </div>

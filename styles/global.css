@@ -44,6 +44,11 @@ ul {
   backdrop-filter: blur(8px);
 }
 
+.backdrop {
+  /* Add the blur effect */
+  backdrop-filter: blur(2px);
+}
+
 .stroke-black {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -58,6 +63,12 @@ ul {
 
 .stroke-yellow {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(245, 158, 11);
+}
+
+.stroke-yellow-white-text {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(245, 158, 11);
 }

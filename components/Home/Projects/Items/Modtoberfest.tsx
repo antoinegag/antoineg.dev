@@ -2,14 +2,27 @@ import Link from "next/link";
 import React from "react";
 import Title from "./Title";
 import Image from "next/image";
+import classNames from "classnames";
+import styles from "../projects.module.css";
 
 export default function Modtoberfest() {
   return (
-    <div className="md:flex flex-wrap md:px-12 xl:px-32 md:min-h-screen items-center">
-      <div className="md:w-2/3 pb-5">
+    <div className={classNames(styles.project, "xl:w-1/2")}>
+      <div>
         <Title>
-          <div className="flex flex-wrap items-center">
-            <span className="text-yellow-500">Modtober</span>fest
+          <div className="flex items-center">
+            <div>
+              <span className="text-yellow-500">Modtober</span>fest
+            </div>
+            <div className="ml-8 hidden md:visible md:block">
+              <Image
+                src="/images/projects/modtoberfest.png"
+                width="185"
+                height="100"
+                layout="intrinsic"
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </Title>
         <p className="mb-3 md:text-3xl">
@@ -23,17 +36,9 @@ export default function Modtoberfest() {
         <div className="yellow-wavy md:text-xl cursor-pointer">
           {" "}
           <Link href="/projects/modtoberfest">
-            <a>Read more</a>
+            <a className="lg:font-normal">Read more</a>
           </Link>
         </div>
-      </div>
-      <div className="hidden md:visible md:flex justify-end xl:justify-center flex-grow">
-        <Image
-          src="/images/projects/modtoberfest.png"
-          width="357"
-          height="200"
-          layout="intrinsic"
-        />
       </div>
     </div>
   );
