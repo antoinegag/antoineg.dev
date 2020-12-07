@@ -1,0 +1,62 @@
+.hero {
+  background: linear-gradient(-45deg, hsl(196, 40%, 91%), hsl(196, 21%, 97%));
+  @apply xl:px-64 flex justify-center items-center min-h-screen;
+}
+
+.more a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.more a:hover {
+  opacity: 0.5;
+}
+
+.more a {
+  padding-top: 60px;
+}
+.more a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid rgba(245, 158, 11);
+  border-bottom: 3px solid rgba(245, 158, 11);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: moreani 2s infinite;
+  animation: moreani 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes moreani {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes moreani {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}

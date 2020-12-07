@@ -1,3 +1,2 @@
 # antoineg.dev
-
-My personal website.
+My website

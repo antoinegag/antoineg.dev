@@ -1,0 +1,4 @@
+.contact {
+  /* background: linear-gradient(-45deg, hsl(196, 40%, 91%), hsl(196, 21%, 97%)); */
+  @apply min-h-screen py-10 text-center flex items-center justify-center bg-black text-white;
+}

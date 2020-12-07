@@ -1,0 +1,85 @@
+html,
+body,
+#__next {
+  @apply h-full;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+h1 {
+  @apply text-6xl;
+  @apply font-semibold;
+  @apply py-5;
+}
+
+h2 {
+  @apply text-5xl;
+  @apply font-semibold;
+  @apply py-4;
+}
+
+h3 {
+  @apply text-4xl;
+  @apply font-semibold;
+  @apply py-4;
+}
+
+h4 {
+  @apply text-3xl font-semibold py-2;
+}
+
+ul {
+  @apply list-disc;
+}
+
+.blurred {
+  /* Add the blur effect */
+  backdrop-filter: blur(8px);
+}
+
+.backdrop {
+  /* Add the blur effect */
+  backdrop-filter: blur(2px);
+}
+
+.stroke-black {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.stroke-white {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.stroke-yellow {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(245, 158, 11);
+}
+
+.stroke-yellow-white-text {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(245, 158, 11);
+}
+
+.yellow-wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(245, 158, 11);
+}
+
+.no-overflow-x {
+  /* overflow-y: visible; */
+  /* overflow-x: hidden; */
+}

@@ -1,0 +1,10 @@
+---
+name: Modtoberfest
+description: Custom made platform for the Modtoberfest event, an Hacktoberfest inspired event
+imageUrl: /images/projects/modtoberfest.png
+repository: https://github.com/Modtoberfest/Modtoberfest-Site
+url: http://modtoberfest.com/
+tech: ["NextJS", "React", "Tailwind", "PostgreSQL", "Express", "Docker"]
+---
+
+# Modtoberfest

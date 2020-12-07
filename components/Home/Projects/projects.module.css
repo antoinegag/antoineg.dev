@@ -1,0 +1,7 @@
+.projects {
+  @apply min-h-screen w-full flex flex-col text-white bg-gray-800;
+}
+
+.project {
+  @apply font-semibold tracking-wide bg-white text-gray-900 md:text-white my-5 px-12 py-12 md:bg-transparent bg-opacity-95;
+}
