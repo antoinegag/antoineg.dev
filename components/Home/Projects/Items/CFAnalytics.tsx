@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
-import Image from "next/image";
 import classNames from "classnames";
 import styles from "../projects.module.css";
 
@@ -14,11 +13,10 @@ export default function CFAnalytics() {
             CF <span className="text-yellow-500">Analytics</span>
           </div>
           <div className="ml-8">
-            <Image
+            <img
               src="/images/projects/cfanalytics-bg.png"
               width="100"
               height="100"
-              layout="intrinsic"
               className="rounded-lg"
             />
           </div>

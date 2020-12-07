@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
-import Image from "next/image";
 import classNames from "classnames";
 import styles from "../projects.module.css";
 
@@ -15,11 +14,10 @@ export default function Modtoberfest() {
               <span className="text-yellow-500">Modtober</span>fest
             </div>
             <div className="ml-8 hidden md:visible md:block">
-              <Image
+              <img
                 src="/images/projects/modtoberfest.png"
                 width="185"
                 height="100"
-                layout="intrinsic"
                 className="rounded-lg"
               />
             </div>

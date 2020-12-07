@@ -17,7 +17,6 @@ export default function index({ projects }: Props) {
       <About />
       <Projects projects={projects} />
       <Contact />
-      {/* <div className="min-h-screen bg-gray-800">stuff</div> */}
     </div>
   );
 }
