@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
-import Image from "next/image";
 import classNames from "classnames";
 import styles from "../projects.module.css";
 
@@ -16,7 +15,7 @@ export default function Climactic() {
         </Title>
         <div>
           <p className="mb-3 md:text-3xl">
-            IoT environmental data collection and reporting system build from
+            IoT environmental data collection and reporting system built from
             scratch, from hardware to software.
           </p>
         </div>

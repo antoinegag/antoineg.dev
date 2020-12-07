@@ -5,12 +5,17 @@ import {
 } from "../../lib/markdownPosts";
 import Head from "next/head";
 import { GetStaticProps, GetStaticPaths } from "next";
+import ProjectNotFound from "../../components/Projects/ProjectNotFound";
 
 export default function Post({
   projectData,
 }: {
   projectData: ProjectData & { contentHtml: string };
 }) {
+  if (!projectData) {
+    return <ProjectNotFound />;
+  }
+
   const {
     id,
     name,

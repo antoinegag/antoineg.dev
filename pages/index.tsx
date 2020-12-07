@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import React from "react";
 import About from "../components/Home/About";
+import Contact from "../components/Home/Contact";
 import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
 import { getProjectsData, ProjectData } from "../lib/markdownPosts";
@@ -15,7 +16,8 @@ export default function index({ projects }: Props) {
       <Hero />
       <About />
       <Projects projects={projects} />
-      <div className="min-h-screen bg-gray-800">stuff</div>
+      <Contact />
+      {/* <div className="min-h-screen bg-gray-800">stuff</div> */}
     </div>
   );
 }
