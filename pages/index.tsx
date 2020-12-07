@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import { NextSeo } from "next-seo";
 import React from "react";
 import About from "../components/Home/About";
 import Contact from "../components/Home/Contact";
@@ -12,12 +13,37 @@ interface Props {
 
 export default function index({ projects }: Props) {
   return (
-    <div className="h-full no-scrollbar">
-      <Hero />
-      <About />
-      <Projects projects={projects} />
-      <Contact />
-    </div>
+    <>
+      <NextSeo
+        title="ANTOINEG.DEV"
+        description="Curiosity driven maker, Web Developer, tech enthusiast"
+        canonical="https://antoineg.dev/"
+        openGraph={{
+          url: "https://antoineg.dev",
+          title: "ANTOINEG.DEV",
+          description: "Curiosity driven maker, Web Developer, tech enthusiast",
+          images: [
+            {
+              url: "https://antoineg.dev/images/action.jpg",
+              width: 585,
+              height: 585,
+              alt: "Portrait",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@antoineg_dev",
+          site: "https://antoineg.dev",
+          cardType: "summary_large_image",
+        }}
+      />
+      <div className="h-full no-scrollbar">
+        <Hero />
+        <About />
+        <Projects projects={projects} />
+        <Contact />
+      </div>
+    </>
   );
 }
 
