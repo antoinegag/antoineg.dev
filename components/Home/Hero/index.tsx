@@ -28,8 +28,8 @@ export default function Hero() {
           <hr className="my-2 border-gray-500" />
           <p className="pb-5">
             Computer science student at University of Sherbrooke
-            <br />
-            Web developer at Coveo R&D
+            {/* <br /> */}
+            {/* Web developer at Coveo R&D */}
           </p>
         </Parallax>
       </div>
