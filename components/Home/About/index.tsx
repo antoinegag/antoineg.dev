@@ -3,6 +3,7 @@ import styles from "./about.module.css";
 import classNames from "classnames";
 import Pulse from "react-reveal/Pulse";
 import { ParallaxBanner, Parallax } from "react-scroll-parallax";
+import { isMobile } from "react-device-detect";
 
 export default function About() {
   return (
@@ -15,6 +16,7 @@ export default function About() {
         },
       ]}
       className={styles.about}
+      disabled={isMobile}
     >
       <div className="flex flex-grow items-center justify-center right">
         <div className="w-full md:w-2/3 px-4 text-xl blurred p-10">
