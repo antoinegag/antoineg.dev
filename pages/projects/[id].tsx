@@ -6,6 +6,7 @@ import {
 import Head from "next/head";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
+import MarkdownPost from "../../components/MarkdownPost";
 
 export default function Post({
   projectData,
@@ -34,15 +35,15 @@ export default function Post({
           <a className="underline">Back home</a>
         </Link>
       </div>
-      <article>
-        <div className="flex justify-between">
-          <div>
+      <div className="flex items-center justify-center">
+        <article>
+          <div className="mb-4">
             <h2 className="text-6xl font-semibold uppercase pb-2 text-yellow-500">
               {name}
             </h2>
             <div className="text-xl">{description}</div>
           </div>
-          <div className="self-end text-right">
+          <div>
             {tech && tech.length > 0 && <div>{tech.join(", ")}</div>}
             {repository && (
               <div className="underline">
@@ -50,13 +51,10 @@ export default function Post({
               </div>
             )}
           </div>
-        </div>
-        <hr className="my-5" />
-        <div
-          className="text-white"
-          dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}
-        />
-      </article>
+          <hr className="my-5" />
+          <MarkdownPost contentHtml={projectData.contentHtml} />
+        </article>
+      </div>
     </div>
   );
 }
