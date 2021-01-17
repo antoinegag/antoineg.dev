@@ -83,3 +83,7 @@ ul {
   /* overflow-y: visible; */
   /* overflow-x: hidden; */
 }
+
+article {
+  max-width: 680px;
+}

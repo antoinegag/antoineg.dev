@@ -1,0 +1,19 @@
+.markdown {
+  line-height: 1.5em;
+
+  h1 {
+    @apply text-3xl text-yellow-400;
+  }
+
+  h2 {
+    @apply text-2xl text-yellow-400 pb-1;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply mb-2;
+  }
+}
