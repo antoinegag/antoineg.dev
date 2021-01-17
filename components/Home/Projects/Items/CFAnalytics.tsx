@@ -29,11 +29,16 @@ export default function CFAnalytics() {
         <p className="mb-3 md:text-3xl">Privacy focused. Trusted by users.</p>
       </div>
       <div className="yellow-wavy md:text-xl cursor-pointer">
-        {" "}
-        <Link href="/projects/cfanalytics">
+        {/* <Link href="/projects/cfanalytics">
           <a className="lg:font-normal">Read more</a>
-        </Link>
+        </Link> */}
       </div>
+      <a
+        href="https://github.com/antoinegag/curseforge-analytics-viewer"
+        target="_blank"
+      >
+        View on Github
+      </a>
     </div>
   );
 }

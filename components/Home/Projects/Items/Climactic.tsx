@@ -20,11 +20,13 @@ export default function Climactic() {
           </p>
         </div>
         <div className="yellow-wavy md:text-xl cursor-pointer">
-          {" "}
-          <Link href="/projects/climactic">
+          {/* <Link href="/projects/climactic">
             <a className="lg:font-normal">Read more</a>
-          </Link>
+          </Link> */}
         </div>
+        <a href="https://github.com/antoinegag/Climactic" target="_blank">
+          View on Github
+        </a>
       </div>
     </div>
   );
