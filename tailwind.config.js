@@ -196,6 +196,7 @@ module.exports = {
         "serif",
       ],
       mono: [
+        "Roboto",
         "ui-monospace",
         "SFMono-Regular",
         "Menlo",

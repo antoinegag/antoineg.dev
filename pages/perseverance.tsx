@@ -45,7 +45,7 @@ const Perseverance = () => {
           <div className="text-2xl lg:text-8xl text-white">
             Perseverance landing
           </div>
-          <div className="text-white text-4xl lg:text-9xl w-full text-center py-5 font-bold">
+          <div className="text-white text-4xl lg:text-9xl w-full text-center py-5 font-bold font-mono">
             <Countdown date={date} renderer={renderer} />
           </div>
           <div className="text-white">
