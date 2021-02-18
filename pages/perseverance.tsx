@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import React, { useState } from "react";
 import Countdown, { zeroPad } from "react-countdown";
 import { isIPad13, isMobile } from "react-device-detect";
@@ -23,24 +24,41 @@ const Perseverance = () => {
   };
 
   return (
-    <div className="bg-gray-800 w-full min-h-screen">
-      <div className="w-full text-center pt-12 absolute">
-        <div className="text-2xl lg:text-8xl text-white">
-          Perseverance landing
-        </div>
-        <div className="text-white text-4xl lg:text-9xl w-full text-center py-5 font-bold">
-          <Countdown date={date} renderer={renderer} />
-        </div>
-        <div className="text-white">
-          {isMobile || isIPad13
-            ? "Move with your fingers!"
-            : "Move with your mouse! Hold left click to rotate, right click to move."}
-        </div>
+    <>
+      <NextSeo
+        title="Perseverance landing"
+        description="Perseverance landing countdown"
+        canonical="https://antoineg.dev/perseverance"
+        openGraph={{
+          url: "https://antoineg.dev/perseverance",
+          title: "Perseverance landing",
+          description: "Perseverance landing countdown",
+        }}
+        twitter={{
+          handle: "@antoineg_dev",
+          site: "https://antoineg.dev",
+          cardType: "summary_large_image",
+        }}
+      />
+      <div className="bg-gray-800 w-full min-h-screen">
+        <div className="w-full text-center pt-12 absolute">
+          <div className="text-2xl lg:text-8xl text-white">
+            Perseverance landing
+          </div>
+          <div className="text-white text-4xl lg:text-9xl w-full text-center py-5 font-bold">
+            <Countdown date={date} renderer={renderer} />
+          </div>
+          <div className="text-white">
+            {isMobile || isIPad13
+              ? "Move with your fingers!"
+              : "Move with your mouse! Hold left click to rotate, right click to move."}
+          </div>
 
-        <div className="text-yellow-500 pb-0">antoineg.dev/perseverance</div>
+          <div className="text-yellow-500 pb-0">antoineg.dev/perseverance</div>
+        </div>
+        <Rover className="min-h-screen bg-gray-800 top-0 z-0 w-full" />
       </div>
-      <Rover className="min-h-screen bg-gray-800 top-0 z-0 w-full" />
-    </div>
+    </>
   );
 };
 
