@@ -7,10 +7,12 @@
     "dev": "next dev",
     "build": "next build && next export",
     "deploy": "rimraf node_modules/.cache && rimraf out && npm run build && gh-pages -d out -t true",
+    "push": "gh-pages -d out -t true",
     "start": "next start"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@react-three/drei": "^3.8.2",
     "autoprefixer": "^10.0.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.11.1",
@@ -23,6 +25,7 @@
     "postcss": "^8.1.9",
     "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
+    "react-countdown": "^2.3.1",
     "react-device-detect": "^1.14.0",
     "react-dom": "16.13.1",
     "react-reveal": "^1.2.2",
