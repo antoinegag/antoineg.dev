@@ -1,5 +1,5 @@
 .media_link {
-  @apply text-2xl underline font-normal mb-2;
+  @apply text-2xl underline font-normal my-2;
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: rgba(245, 158, 11);

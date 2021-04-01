@@ -50,8 +50,8 @@ const Perseverance = () => {
           </div>
           <div className="text-white">
             {isMobile || isIPad13
-              ? "Move with your fingers!"
-              : "Move with your mouse! Hold left click to rotate, right click to move."}
+              ? "Touch and drag to explore the rover"
+              : "Click and drag to explore the rover"}
           </div>
 
           <div className="text-yellow-500 pb-0">antoineg.dev/perseverance</div>

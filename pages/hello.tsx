@@ -5,8 +5,7 @@ import styles from "../styles/hello.module.css";
 export default function Hello() {
   return (
     <div className="min-h-full bg-gray-800 flex items-center justify-center text-white flex-col font-semibold">
-      <div className="text-8xl mb-8 stroke-yellow">HELLO</div>
-      {/* <div className="text-8xl mb-8 stroke-yellow-white-text">HELLO</div> */}
+      <div className="lg:text-8xl text-6xl mb-8 stroke-yellow">HELLO</div>
       <Link href="/">
         <a className={styles.media_link}>antoineg.dev</a>
       </Link>
@@ -20,6 +19,12 @@ export default function Hello() {
         Instagram
       </a>
       <a
+        href="https://www.goodreads.com/user/show/131654245-antoine"
+        className={styles.media_link}
+      >
+        Goodreads
+      </a>
+      <a
         href="https://open.spotify.com/user/antoinem8"
         className={styles.media_link}
       >
@@ -31,7 +36,7 @@ export default function Hello() {
       {/* <Link href="/">
         <a className="text-2xl underline font-normal yellow-wavy">Posts</a>
       </Link> */}
-      <div className="text-8xl mb-8 stroke-yellow mt-6">HELLO</div>
+      <div className="lg:text-8xl text-6xl mb-8 stroke-yellow mt-6">HELLO</div>
     </div>
   );
 }
