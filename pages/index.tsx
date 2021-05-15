@@ -44,7 +44,7 @@ export default function index({ projects }: Props) {
           available ✌️
         </div>
         <Hero />
-        {/* <About /> */}
+        <About />
         {/* <Projects projects={projects} /> */}
         <Contact />
       </div>
