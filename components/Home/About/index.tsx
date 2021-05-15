@@ -3,13 +3,13 @@ import Fade from "react-reveal/Fade";
 
 export default function About() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-tr to-matcha-50 from-peach-50 via-matcha-50">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-tr to-green-50 from-peach-50 via-green-50">
       <div className="p-5">
         <h1 className="flex flex-wrap">
-          <div className="whitespace-no-wrap text-matcha-900 mr-4">
+          <div className="whitespace-no-wrap text-green-900 mr-4">
             Building software for
           </div>
-          <div className="font-semibold text-matcha-600">
+          <div className="font-semibold text-green-600">
             <Fade left>Humans.</Fade>
           </div>
         </h1>
@@ -19,13 +19,13 @@ export default function About() {
           </span>{" "}
           who loves to put{" "}
           <span className="text-peach-500 text-2xl">great software</span> in the
-          hands of{" "}
-          <span className="text-matcha-600 text-2xl">great people</span>.
+          hands of <span className="text-green-600 text-2xl">great people</span>
+          .
         </p>
         <p className="mb-3 font-semibold text-gray-800 text-xl">
           I'm driven by the{" "}
-          <span className="text-matcha-600 text-2xl">impact</span> my work makes
-          on <span className="text-matcha-600 text-2xl">people's life</span> at
+          <span className="text-green-600 text-2xl">impact</span> my work makes
+          on <span className="text-green-600 text-2xl">people's life</span> at
           any and every scale, big or small.
         </p>
       </div>

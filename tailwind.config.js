@@ -17,7 +17,7 @@ module.exports = {
       current: "currentColor",
 
       // https://maketintsandshades.com/#73ac38,ffc7d1,ff927b
-      matcha: {
+      green: {
         50: "#f1f7eb",
         75: "#e3eed7",
         100: "#abcd88",
