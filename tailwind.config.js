@@ -16,6 +16,36 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
+      // https://maketintsandshades.com/#73ac38,ffc7d1,ff927b
+      matcha: {
+        50: "#f1f7eb",
+        75: "#e3eed7",
+        100: "#abcd88",
+        200: "#9dc574",
+        300: "#8fbd60",
+        400: "#81b44c",
+        DEFAULT: "#73ac38",
+        500: "#73ac38",
+        600: "#689b32",
+        700: "#5c8a2d",
+        800: "#517827",
+        900: "#2e4516",
+      },
+      peach: {
+        50: "#fff4f2",
+        75: "#ffe9e5",
+        100: "#ffd3ca",
+        200: "#ffb3a3",
+        300: "#ffa895",
+        400: "#ff9d88",
+        DEFAULT: "#ff927b",
+        500: "#ff927b",
+        600: "#e6836f",
+        700: "#cc7562",
+        800: "#b36656",
+        900: "#99584a",
+      },
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -131,12 +161,9 @@ module.exports = {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      md:
-        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-      lg:
-        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      xl:
-        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
