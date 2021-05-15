@@ -38,9 +38,14 @@ export default function index({ projects }: Props) {
         }}
       />
       <div className="h-full no-scrollbar">
+        <div className="bg-peach-500 p-5 text-peach-50 text-center">
+          👋 Hey there! <br />
+          This site is in maintenance mode, only limited content will be
+          available ✌️
+        </div>
         <Hero />
-        <About />
-        <Projects projects={projects} />
+        {/* <About /> */}
+        {/* <Projects projects={projects} /> */}
         <Contact />
       </div>
     </>
