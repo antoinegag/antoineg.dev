@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ProjectData } from "../../../lib/markdownPosts";
-import Pyramid from "../../3D/Pyramid";
-import Header from "./Header";
 import AntoineGDev from "./Items/AntoineGDev";
 import CFAnalytics from "./Items/CFAnalytics";
 import Climactic from "./Items/Climactic";
 import Modtoberfest from "./Items/Modtoberfest";
 import Sara from "./Items/Sara";
-import styles from "./projects.module.css";
 
 export default function Projects({ projects }: { projects: ProjectData[] }) {
   return (
