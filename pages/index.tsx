@@ -4,6 +4,7 @@ import React from "react";
 import About from "../components/Home/About";
 import Contact from "../components/Home/Contact";
 import Experience from "../components/Home/Experience";
+import Current from "../components/Home/Experience/Current";
 import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
 import { getProjectsData, ProjectData } from "../lib/markdownPosts";
@@ -45,6 +46,7 @@ export default function index({ projects }: Props) {
         </div> */}
         <Hero />
         <About />
+        <Current />
         <Experience />
         {/* <Projects projects={projects} /> */}
         <Contact />

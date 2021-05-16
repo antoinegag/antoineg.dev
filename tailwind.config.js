@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  purge: ["./pages/**/*.tsx", "./components/**/*.tsx", "./**/*.tsx"],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -589,6 +589,8 @@ module.exports = {
       8: "8px",
     },
     rotate: {
+      "-192": "-192deg",
+      "-186": "-186deg",
       "-180": "-180deg",
       "-90": "-90deg",
       "-45": "-45deg",
@@ -606,6 +608,8 @@ module.exports = {
       45: "45deg",
       90: "90deg",
       180: "180deg",
+      186: "186deg",
+      192: "192deg",
     },
     scale: {
       0: "0",
