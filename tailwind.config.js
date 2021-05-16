@@ -17,20 +17,6 @@ module.exports = {
       current: "currentColor",
 
       // https://maketintsandshades.com/#73ac38,ffc7d1,ff927b
-      green: {
-        50: "#f1f7eb",
-        75: "#e3eed7",
-        100: "#abcd88",
-        200: "#9dc574",
-        300: "#8fbd60",
-        400: "#81b44c",
-        DEFAULT: "#73ac38",
-        500: "#73ac38",
-        600: "#689b32",
-        700: "#5c8a2d",
-        800: "#517827",
-        900: "#2e4516",
-      },
       peach: {
         50: "#fff4f2",
         75: "#ffe9e5",

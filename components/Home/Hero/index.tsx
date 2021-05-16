@@ -5,9 +5,8 @@ export default function Hero() {
   return (
     <div className="flex px-5 justify-center items-center min-h-screen bg-gradient-to-br to-green-50 from-peach-50 via-green-50">
       <div>
-        <h1>
-          <span className="text-green-700 font-bold">Antoine</span>{" "}
-          <span className="text-peach-500">Gagnon</span>
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-l to-green-600 via-indigo-500 from-peach-500">
+          Antoine Gagnon
         </h1>
         <p className="text-peach-500 font-semibold text-xl">
           Curiosity & impact driven{" "}

@@ -11,18 +11,17 @@ import styles from "./projects.module.css";
 
 export default function Projects({ projects }: { projects: ProjectData[] }) {
   return (
-    <div className={styles.projects}>
-      <Header />
-      <Pyramid className="min-h-screen sticky top-0 z-0" />
-      <div className="px-5 z-10">
-        <AntoineGDev />
-        <Sara />
-        <div className="xl:flex">
-          <Modtoberfest />
-          <CFAnalytics />
-        </div>
-        <Climactic />
+    <div className="min-h-screen w-full flex flex-col text-white bg-peach-50">
+      <div className="font-bold text-5xl md:text-8xl text-green-800">
+        What I do
       </div>
+      <AntoineGDev />
+      <Sara />
+      <div className="xl:flex">
+        <Modtoberfest />
+        <CFAnalytics />
+      </div>
+      <Climactic />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo";
 import React from "react";
 import About from "../components/Home/About";
 import Contact from "../components/Home/Contact";
+import Experience from "../components/Home/Experience";
 import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
 import { getProjectsData, ProjectData } from "../lib/markdownPosts";
@@ -38,12 +39,13 @@ export default function index({ projects }: Props) {
         }}
       />
       <div className="h-full no-scrollbar">
-        <div className="bg-peach-500 p-5 text-peach-50 text-center">
+        {/* <div className="bg-peach-500 p-5 text-peach-50 text-center">
           👋 Hey there! This site is in maintenance mode, limited content is
           available for now ✌️
-        </div>
+        </div> */}
         <Hero />
         <About />
+        <Experience />
         {/* <Projects projects={projects} /> */}
         <Contact />
       </div>
