@@ -14,9 +14,7 @@ html {
 }
 
 h1 {
-  @apply text-6xl;
-  @apply font-semibold;
-  @apply py-5;
+  @apply font-semibold py-5 md:text-6xl text-4xl;
 }
 
 h2 {
