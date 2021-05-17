@@ -7,10 +7,9 @@ const Current = (props: {
   forwardedRef: React.LegacyRef<HTMLDivElement>;
 }) => {
   const { inViewport, forwardedRef } = props;
-  console.log("in", inViewport);
 
   return (
-    <div className="overflow-hidden py-32 min-h-screen flex flex-col justify-between px-5 bg-gradient-to-br to-green-50 from-peach-50 via-green-50">
+    <div className="overflow-x-hidden py-32 min-h-screen flex flex-col justify-between px-5 bg-gradient-to-br to-green-50 from-peach-50 via-green-50">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto" ref={forwardedRef}>
         <div
           className={classNames(
