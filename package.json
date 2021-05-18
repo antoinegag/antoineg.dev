@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@heroicons/react": "^1.0.1",
     "@react-three/drei": "^3.8.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.11.1",
