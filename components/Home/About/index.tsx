@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import SoftwareDefCard from "./SoftwareDefCard";
 
 export default function About() {
   return (
@@ -13,6 +14,9 @@ export default function About() {
             <Fade left>Humans.</Fade>
           </div>
         </h1>
+        <div className="py-4">
+          <SoftwareDefCard />
+        </div>
         <p className="mb-3 text-gray-800 font-semibold text-xl">
           <span className="text-peach-500 text-2xl">
             Fullstack Web Developer

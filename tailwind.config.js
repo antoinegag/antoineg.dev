@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./**/*.tsx"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -219,6 +219,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      open: ["Open Sans"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
