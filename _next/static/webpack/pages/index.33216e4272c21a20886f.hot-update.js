@@ -1,0 +1,24 @@
+self["webpackHotUpdate_N_E"]("pages/index",{
+
+/***/ "./node_modules/next/dist/compiled/css-loader/cjs.js??ruleSet[1].rules[2].oneOf[2].use[1]!./node_modules/next/dist/compiled/postcss-loader/cjs.js??ruleSet[1].rules[2].oneOf[2].use[2]!./components/Home/About/SoftwareDefCard.module.css":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/compiled/css-loader/cjs.js??ruleSet[1].rules[2].oneOf[2].use[1]!./node_modules/next/dist/compiled/postcss-loader/cjs.js??ruleSet[1].rules[2].oneOf[2].use[2]!./components/Home/About/SoftwareDefCard.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/next/dist/compiled/css-loader/api.js */ "./node_modules/next/dist/compiled/css-loader/api.js");
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".SoftwareDefCard_computer__3A90J {\n  position: relative;\n}\n\n.SoftwareDefCard_computer__3A90J::after {\n  border-bottom: 0.125em solid red;\n  content: \"\";\n  left: 0;\n  margin-top: calc(0.125em / 2 * -1);\n  position: absolute;\n  right: 0;\n  top: 50%;\n}\r\n", "",{"version":3,"sources":["webpack://components/Home/About/SoftwareDefCard.module.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;;AACA;EACE,gCAAgC;EAChC,WAAW;EACX,OAAO;EACP,kCAAkC;EAClC,kBAAkB;EAClB,QAAQ;EACR,QAAQ;AACV","sourcesContent":[".computer {\r\n  position: relative;\r\n}\r\n.computer::after {\r\n  border-bottom: 0.125em solid red;\r\n  content: \"\";\r\n  left: 0;\r\n  margin-top: calc(0.125em / 2 * -1);\r\n  position: absolute;\r\n  right: 0;\r\n  top: 50%;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"computer": "SoftwareDefCard_computer__3A90J"
+};
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ })
+
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vY29tcG9uZW50cy9Ib21lL0Fib3V0L1NvZnR3YXJlRGVmQ2FyZC5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBQUE7QUFDQSxrQ0FBa0MsbUJBQU8sQ0FBQyx1SEFBNEQ7QUFDdEc7QUFDQTtBQUNBLDRFQUE0RSx1QkFBdUIsR0FBRyw2Q0FBNkMscUNBQXFDLGtCQUFrQixZQUFZLHVDQUF1Qyx1QkFBdUIsYUFBYSxhQUFhLEdBQUcsV0FBVyxpSEFBaUgsWUFBWSxPQUFPLEtBQUssWUFBWSxXQUFXLFVBQVUsWUFBWSxhQUFhLFdBQVcsVUFBVSxvQ0FBb0MseUJBQXlCLEtBQUssc0JBQXNCLHVDQUF1QyxvQkFBb0IsY0FBYyx5Q0FBeUMseUJBQXlCLGVBQWUsZUFBZSxLQUFLLHVCQUF1QjtBQUNqekI7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJzdGF0aWMvd2VicGFjay9wYWdlcy9pbmRleC4zMzIxNmU0MjcyYzIxYTIwODg2Zi5ob3QtdXBkYXRlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gSW1wb3J0c1xudmFyIF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyA9IHJlcXVpcmUoXCIuLi8uLi8uLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NvbXBpbGVkL2Nzcy1sb2FkZXIvYXBpLmpzXCIpO1xudmFyIF9fX0NTU19MT0FERVJfRVhQT1JUX19fID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5fX19DU1NfTE9BREVSX0VYUE9SVF9fXy5wdXNoKFttb2R1bGUuaWQsIFwiLlNvZnR3YXJlRGVmQ2FyZF9jb21wdXRlcl9fM0E5MEoge1xcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcbn1cXG5cXG4uU29mdHdhcmVEZWZDYXJkX2NvbXB1dGVyX18zQTkwSjo6YWZ0ZXIge1xcbiAgYm9yZGVyLWJvdHRvbTogMC4xMjVlbSBzb2xpZCByZWQ7XFxuICBjb250ZW50OiBcXFwiXFxcIjtcXG4gIGxlZnQ6IDA7XFxuICBtYXJnaW4tdG9wOiBjYWxjKDAuMTI1ZW0gLyAyICogLTEpO1xcbiAgcG9zaXRpb246IGFic29sdXRlO1xcbiAgcmlnaHQ6IDA7XFxuICB0b3A6IDUwJTtcXG59XFxyXFxuXCIsIFwiXCIse1widmVyc2lvblwiOjMsXCJzb3VyY2VzXCI6W1wid2VicGFjazovL2NvbXBvbmVudHMvSG9tZS9BYm91dC9Tb2Z0d2FyZURlZkNhcmQubW9kdWxlLmNzc1wiXSxcIm5hbWVzXCI6W10sXCJtYXBwaW5nc1wiOlwiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLGdDQUFnQztFQUNoQyxXQUFXO0VBQ1gsT0FBTztFQUNQLGtDQUFrQztFQUNsQyxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFFBQVE7QUFDVlwiLFwic291cmNlc0NvbnRlbnRcIjpbXCIuY29tcHV0ZXIge1xcclxcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcclxcbn1cXHJcXG4uY29tcHV0ZXI6OmFmdGVyIHtcXHJcXG4gIGJvcmRlci1ib3R0b206IDAuMTI1ZW0gc29saWQgcmVkO1xcclxcbiAgY29udGVudDogXFxcIlxcXCI7XFxyXFxuICBsZWZ0OiAwO1xcclxcbiAgbWFyZ2luLXRvcDogY2FsYygwLjEyNWVtIC8gMiAqIC0xKTtcXHJcXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcXHJcXG4gIHJpZ2h0OiAwO1xcclxcbiAgdG9wOiA1MCU7XFxyXFxufVxcclxcblwiXSxcInNvdXJjZVJvb3RcIjpcIlwifV0pO1xuLy8gRXhwb3J0c1xuX19fQ1NTX0xPQURFUl9FWFBPUlRfX18ubG9jYWxzID0ge1xuXHRcImNvbXB1dGVyXCI6IFwiU29mdHdhcmVEZWZDYXJkX2NvbXB1dGVyX18zQTkwSlwiXG59O1xubW9kdWxlLmV4cG9ydHMgPSBfX19DU1NfTE9BREVSX0VYUE9SVF9fXztcbiJdLCJzb3VyY2VSb290IjoiIn0=
