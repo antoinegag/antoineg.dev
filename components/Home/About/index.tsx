@@ -14,7 +14,7 @@ export default function About() {
             <Fade left>Humans.</Fade>
           </div>
         </h1>
-        <div className="py-4">
+        <div className="pb-5">
           <SoftwareDefCard />
         </div>
         <p className="mb-3 text-gray-800 font-semibold text-xl">
