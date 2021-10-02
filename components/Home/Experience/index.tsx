@@ -13,13 +13,13 @@ const Experience = () => {
             my path to help people with software. Here they are.
           </p>
           <div className="mb-10">
-            <div className="font-bold stroke-yellow text-4xl text-left md:w-1/2 xl:w-1/4 mx-auto">
+            <div className="font-bold stroke-yellow text-3xl md:text-4xl text-left md:w-1/2 xl:w-1/4 mx-auto">
               Making time
             </div>
-            <div className="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-l to-peach-600 from-peach-500 pb-2">
+            <div className="font-bold text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-l to-peach-600 from-peach-500 py-2">
               Agendrix
             </div>
-            <div className="font-bold stroke-yellow text-5xl text-right md:w-1/2 xl:w-1/4 mx-auto">
+            <div className="font-bold stroke-yellow text-3xl md:text-4xl text-right md:w-1/2 xl:w-1/4 mx-auto">
               count
             </div>
             <p className="text-2xl">
@@ -29,13 +29,13 @@ const Experience = () => {
             </p>
           </div>
           <div className="mb-10">
-            <div className="font-bold stroke-indigo text-4xl text-left md:w-1/2 xl:w-1/4 mx-auto">
+            <div className="font-bold stroke-indigo text-3xl md:text-4xl text-left md:w-1/2 xl:w-1/4 mx-auto">
               Making search
             </div>
-            <div className="font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-l to-indigo-800 from-indigo-900 pb-2">
+            <div className="font-bold text-5xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-l to-indigo-800 from-indigo-900 pb-2">
               Coveo
             </div>
-            <div className="font-bold stroke-indigo text-5xl text-right md:w-1/2 xl:w-1/4 mx-auto">
+            <div className="font-bold stroke-indigo text-3xl md:text-4xl text-right md:w-1/2 xl:w-1/4 mx-auto">
               relevant
             </div>
             <p className="text-2xl">

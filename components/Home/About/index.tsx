@@ -14,7 +14,7 @@ export default function About() {
             <Fade left>Humans.</Fade>
           </div>
         </h1>
-        <div className="pb-5">
+        <div className="pb-10 pt-5">
           <SoftwareDefCard />
         </div>
         <p className="mb-3 text-gray-800 font-semibold text-xl">
@@ -35,7 +35,7 @@ export default function About() {
       </div>
       <div className="w-1/3 px-4 hidden md:block z-50">
         <img
-          className="d-none d-md-block"
+          className="d-none d-md-block rounded-full"
           alt="portrait"
           src="/images/action.jpg"
         />

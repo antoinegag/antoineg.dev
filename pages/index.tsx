@@ -48,7 +48,7 @@ export default function index({ projects }: Props) {
         <About />
         <Current />
         <Experience />
-        {/* <Projects projects={projects} /> */}
+        <Projects projects={projects} />
         <Contact />
       </div>
     </>

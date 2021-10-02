@@ -3,7 +3,7 @@ import { MailOpenIcon } from "@heroicons/react/outline";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen py-10 text-center flex items-center justify-center bg-gradient-to-bl to-green-50 from-peach-50 via-green-50">
+    <div className="min-h-screen py-10 text-center flex items-center justify-center bg-gradient-to-tl to-green-50 from-peach-50 via-green-50">
       <div className="text-2xl">
         <h1 className="text-green-700">Contact</h1>
         <div className="text-3xl">
