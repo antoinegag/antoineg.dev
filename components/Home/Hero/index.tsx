@@ -1,9 +1,19 @@
 import React from "react";
 import styles from "./hero.module.css";
+import classNames from "classnames";
 
-export default function Hero() {
+interface Props {
+  className?: string;
+}
+
+export default function Hero({ className }: Props) {
   return (
-    <div className="flex px-5 justify-center items-center min-h-screen bg-gradient-to-br to-green-50 from-peach-50 via-green-50">
+    <div
+      className={classNames(
+        "flex px-5 justify-center items-center min-h-screen bg-gradient-to-br to-green-50 from-peach-50 via-green-50",
+        className
+      )}
+    >
       <div>
         <h1 className="text-6xl bg-clip-text text-transparent bg-gradient-to-l to-green-600 via-indigo-500 from-peach-500">
           Antoine Gagnon
@@ -19,11 +29,6 @@ export default function Hero() {
           alt="portrait"
           src="/images/drip2.png"
         />
-      </div>
-      <div className={styles.more}>
-        <a>
-          <span></span>
-        </a>
       </div>
     </div>
   );

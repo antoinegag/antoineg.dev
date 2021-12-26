@@ -1,10 +1,20 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import SoftwareDefCard from "./SoftwareDefCard";
+import classNames from "classnames";
 
-export default function About() {
+interface Props {
+  className?: string;
+}
+
+export default function About({ className }: Props) {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-tr to-green-50 from-peach-50 via-green-50">
+    <div
+      className={classNames(
+        "flex items-center justify-center min-h-screen bg-gradient-to-tr to-green-50 from-peach-50 via-green-50",
+        className
+      )}
+    >
       <div className="p-5">
         <h1 className="flex flex-wrap">
           <div className="whitespace-no-wrap text-green-900 mr-4">

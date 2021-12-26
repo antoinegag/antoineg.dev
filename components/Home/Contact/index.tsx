@@ -1,9 +1,19 @@
 import React from "react";
 import { MailOpenIcon } from "@heroicons/react/outline";
+import classNames from "classnames";
 
-export default function Contact() {
+interface Props {
+  className?: string;
+}
+
+export default function Contact({ className }: Props) {
   return (
-    <div className="min-h-screen py-10 text-center flex items-center justify-center bg-gradient-to-tl to-green-50 from-peach-50 via-green-50">
+    <div
+      className={classNames(
+        "min-h-screen py-10 text-center flex items-center justify-center bg-gradient-to-tl to-green-50 from-peach-50 via-green-50",
+        className
+      )}
+    >
       <div className="text-2xl">
         <h1 className="text-green-700">Contact</h1>
         <div className="text-3xl">

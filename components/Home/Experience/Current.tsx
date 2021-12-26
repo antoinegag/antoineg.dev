@@ -3,14 +3,20 @@ import handleViewport from "react-in-viewport";
 import classNames from "classnames";
 import GlobeMesh from "../../3D/Globe";
 
-const Current = (props: {
+interface Props {
   inViewport: boolean;
   forwardedRef: React.LegacyRef<HTMLDivElement>;
-}) => {
-  const { inViewport, forwardedRef } = props;
+  className?: string;
+}
 
+const Current = ({ inViewport, forwardedRef, className }: Props) => {
   return (
-    <div className="overflow-x-hidden min-h-plus flex flex-col justify-between bg-gradient-to-br to-green-50 from-peach-50 via-green-50">
+    <div
+      className={classNames(
+        "overflow-x-hidden min-h-plus flex flex-col justify-between bg-gradient-to-br to-green-50 from-peach-50 via-green-50",
+        className
+      )}
+    >
       <div className="relative">
         <GlobeMesh className="min-h-plus inset-0 z-0 absolute md:block" />
         <div className="absolute inset-0 flex items-center justify-center px-2">

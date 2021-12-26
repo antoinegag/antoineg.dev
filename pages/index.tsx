@@ -39,17 +39,17 @@ export default function index({ projects }: Props) {
           cardType: "summary_large_image",
         }}
       />
-      <div className="h-full no-scrollbar">
+      <div className="h-full no-scrollbar snap snap-y snap-mandatory overflow-y-scroll">
         {/* <div className="bg-peach-500 p-5 text-peach-50 text-center">
           👋 Hey there! This site is in maintenance mode, limited content is
           available for now ✌️
         </div> */}
-        <Hero />
-        <About />
-        <Current />
-        <Experience />
-        <Projects projects={projects} />
-        <Contact />
+        <Hero className="snap-start" />
+        <About className="snap-start" />
+        <Current className="snap-start" />
+        <Experience className="snap-start" />
+        <Projects projects={projects} className="snap-start" />
+        <Contact className="snap-start" />
       </div>
     </>
   );
