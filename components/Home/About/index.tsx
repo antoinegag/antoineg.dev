@@ -1,67 +1,45 @@
 import React from "react";
-import styles from "./about.module.css";
-import classNames from "classnames";
-import Pulse from "react-reveal/Pulse";
-import { ParallaxBanner, Parallax } from "react-scroll-parallax";
-import { isMobile } from "react-device-detect";
+import Fade from "react-reveal/Fade";
+import SoftwareDefCard from "./SoftwareDefCard";
 
 export default function About() {
   return (
-    <ParallaxBanner
-      layers={[
-        {
-          image: "/images/desk1.jpg",
-          amount: 0.2,
-          props: { className: "md:right-16" },
-        },
-      ]}
-      className={styles.about}
-      disabled={isMobile}
-    >
-      <div className="flex flex-grow items-center justify-center right">
-        <div className="w-full md:w-2/3 px-4 text-xl blurred p-10">
-          <h1 className="text-4xl md:text-6xl hidden md:flex md:flex-wrap">
-            <div className="whitespace-no-wrap">Welcome to my</div>
-            <div
-              className={classNames(
-                "ml-5 font-semibold text-yellow-500",
-                styles.upsidedown
-              )}
-            >
-              <Pulse>world</Pulse>
-            </div>
-            .
-          </h1>
-          <h1 className="block md:hidden text-3xl font-semibold">
-            Welcome to my world
-          </h1>
-          <p className="mb-3">
-            I'm a{" "}
-            <span className="font-semibold">Full-stack web developer</span> but
-            I don't like to stop myself at that, give me a challenge or pique my
-            curiosity and that title becomes{" "}
-            <span className="line-through">irrelevant</span>.
-          </p>
-          <p className="mb-3">
-            I love to learn and learn to build great products. I'm driven by the
-            impact my work makes on people's life at any and every scale, big or
-            small.
-          </p>
-          <p>
-            My projects range from analytics dashboards to tailor-made event
-            experiences to custom IoT devices, anything goes
-          </p>
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-tr to-green-50 from-peach-50 via-green-50">
+      <div className="p-5">
+        <h1 className="flex flex-wrap">
+          <div className="whitespace-no-wrap text-green-900 mr-4">
+            Building software for
+          </div>
+          <div className="font-semibold text-green-600">
+            <Fade left>Humans.</Fade>
+          </div>
+        </h1>
+        <div className="pb-10 pt-5">
+          <SoftwareDefCard />
         </div>
-        <div className="w-1/3 px-4 hidden md:block z-50">
-          <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-            <img
-              className="d-none d-md-block"
-              alt="portrait"
-              src="/images/action.jpg"
-            />
-          </Parallax>
-        </div>
+        <p className="mb-3 text-gray-800 font-semibold text-xl">
+          <span className="text-peach-500 text-2xl">
+            Fullstack Web Developer
+          </span>{" "}
+          who loves to put{" "}
+          <span className="text-peach-500 text-2xl">great software</span> in the
+          hands of <span className="text-green-600 text-2xl">great people</span>
+          .
+        </p>
+        <p className="mb-3 font-semibold text-gray-800 text-xl">
+          I'm driven by the{" "}
+          <span className="text-green-600 text-2xl">impact</span> my work makes
+          on <span className="text-green-600 text-2xl">people's life</span> at
+          any and every scale, big or small.
+        </p>
       </div>
-    </ParallaxBanner>
+      <div className="w-1/3 px-4 hidden md:block z-50">
+        <img
+          className="d-none d-md-block rounded-full"
+          alt="portrait"
+          src="/images/action.jpg"
+        />
+      </div>
+    </div>
   );
 }

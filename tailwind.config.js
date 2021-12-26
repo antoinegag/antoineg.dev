@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -15,6 +15,22 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+
+      // https://maketintsandshades.com/#73ac38,ffc7d1,ff927b
+      peach: {
+        50: "#fff4f2",
+        75: "#ffe9e5",
+        100: "#ffd3ca",
+        200: "#ffb3a3",
+        300: "#ffa895",
+        400: "#ff9d88",
+        DEFAULT: "#ff927b",
+        500: "#ff927b",
+        600: "#e6836f",
+        700: "#cc7562",
+        800: "#b36656",
+        900: "#99584a",
+      },
 
       black: colors.black,
       white: colors.white,
@@ -131,12 +147,9 @@ module.exports = {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      md:
-        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-      lg:
-        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      xl:
-        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
@@ -206,6 +219,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      open: ["Open Sans"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -491,6 +505,7 @@ module.exports = {
       0: "0px",
       full: "100%",
       screen: "100vh",
+      plus: "110vh",
     },
     minWidth: {
       0: "0px",
@@ -576,6 +591,8 @@ module.exports = {
       8: "8px",
     },
     rotate: {
+      "-192": "-192deg",
+      "-186": "-186deg",
       "-180": "-180deg",
       "-90": "-90deg",
       "-45": "-45deg",
@@ -593,6 +610,8 @@ module.exports = {
       45: "45deg",
       90: "90deg",
       180: "180deg",
+      186: "186deg",
+      192: "192deg",
     },
     scale: {
       0: "0",

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #__next {
@@ -14,9 +18,7 @@ html {
 }
 
 h1 {
-  @apply text-6xl;
-  @apply font-semibold;
-  @apply py-5;
+  @apply font-semibold py-5 md:text-6xl text-4xl;
 }
 
 h2 {
@@ -39,9 +41,11 @@ ul {
   @apply list-disc;
 }
 
-.blurred {
+.blur {
   /* Add the blur effect */
-  backdrop-filter: blur(8px);
+  /* backdrop-filter: blur(8px); */
+  filter: blur(3px);
+  -webkit-filter: blur(3x);
 }
 
 .backdrop {
@@ -64,13 +68,25 @@ ul {
 .stroke-yellow {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(245, 158, 11);
+  -webkit-text-stroke-color: #ff927b;
+}
+
+.stroke-indigo {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #312e81;
+}
+
+.stroke-green {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #10b981;
 }
 
 .stroke-yellow-white-text {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(245, 158, 11);
+  -webkit-text-stroke-color: #ff927b;
 }
 
 .yellow-wavy {
