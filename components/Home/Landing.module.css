@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "inner-div";
+  @apply h-full;
+}
+
+.container > * {
+  grid-area: inner-div;
+}
+
+.container video {
+  z-index: 1;
+  animation: blur_animate 11s forwards;
+}
+
+.container div {
+  z-index: 2;
+}
