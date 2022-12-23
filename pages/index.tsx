@@ -7,7 +7,9 @@ export default function Home() {
       <div className="h-full text-white flex-grow">
         <Landing />
         <Tagline />
-        <div className="h-full bg-red-600"></div>
+        <div className="h-full bg-black text-white flex items-center justify-center text-5xl p-5 text-center font-thin">
+          Work in Progress :)
+        </div>
       </div>
     </div>
   );
