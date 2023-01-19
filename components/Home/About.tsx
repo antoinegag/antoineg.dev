@@ -20,9 +20,8 @@ export default function About() {
         </h2>
         <div className="text-gray-100">
           <p>
-            <b>Web developer</b> with a focus on <b>front-end</b>. You can find
-            me cycling or hiking in the great outdoors the minute I close my
-            laptop.
+            I&apos;m a <b>Web developer</b> with a focus on <b>front-end</b>{" "}
+            developement and great experiences.
           </p>
           <p>
             I&apos;m always looking to learn and take on new challenges, whether

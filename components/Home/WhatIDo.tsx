@@ -41,6 +41,14 @@ export default function WhatIDo() {
               <img src="images/me/shopify-cc.jpg" className="rounded-md" />
             </div>
           </div>
+          <div className="px-5">
+            <a
+              className="underline font-bold"
+              href="https://www.linkedin.com/in/antoine-gagnon/"
+            >
+              Connect with me on LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </div>
