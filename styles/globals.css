@@ -8,3 +8,7 @@ body,
 main {
   height: 100%;
 }
+
+p {
+  @apply pb-2;
+}
