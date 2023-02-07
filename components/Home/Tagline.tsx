@@ -1,5 +1,6 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { isMobile } from "react-device-detect";
 
 export default function Tagline() {
   return (
@@ -9,11 +10,13 @@ export default function Tagline() {
           className="h-full"
           layers={[
             {
-              image: "images/me/sunset.jpg",
+              className: "md:m-72",
+              style: { maxWidth: "729px" },
+              image: "images/me/sunset-erase.jpg",
               speed: -10,
             },
             {
-              speed: -18,
+              speed: isMobile ? -20 : -30,
               children: (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <h2 className="text-6xl text-white text-center w-2/3 font-extralight [&>*]:pb-2">
@@ -27,8 +30,9 @@ export default function Tagline() {
               ),
             },
             {
+              className: "-ml-8",
               image: "images/me/sunset-cut.png",
-              speed: -10,
+              speed: isMobile ? -12 : -20,
             },
           ]}
         />
