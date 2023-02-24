@@ -36,12 +36,13 @@ export default function WhatIDo() {
               <div className="font-bold text-lg text-black">
                 Frontend Web Developer at Shopify
               </div>
+              <div>(not professional cyclist)</div>
             </div>
             <div>
               <img src="images/me/shopify-cc.jpg" className="rounded-md" />
             </div>
           </div>
-          <div className="px-5">
+          <div className="px-5 lg:text-xl">
             <a
               className="underline font-bold"
               href="https://www.linkedin.com/in/antoine-gagnon/"
