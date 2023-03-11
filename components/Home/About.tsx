@@ -10,19 +10,22 @@ export default function About() {
     <div
       className={classNames(
         styles.about,
-        "h-full bg-black mx-auto px-10 lg:px-36 flex justify-center items-center"
+        "h-full mx-auto px-10 lg:px-36 flex flex-col lg:flex-row justify-center items-center lg:space-x-32 space-y-6"
       )}
     >
+      <div className="">
+        <img src="images/me/outdoor.jpg" />
+      </div>
       <div>
         <h2
           className={classNames(
             unbounded.className,
-            "lg:text-9xl text-3xl pb-2"
+            "lg:text-5xl text-3xl pb-2 text-gray-800"
           )}
         >
           About me
         </h2>
-        <div className="text-gray-100 lg:text-5xl">
+        <div className="text-gray-800 lg:text-3xl">
           <p className="lg:mb-8">
             I&apos;m a <b>Web developer</b> with a focus on <b>front-end</b>{" "}
             developement and great experiences.
